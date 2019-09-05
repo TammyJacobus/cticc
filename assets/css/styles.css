@@ -95,7 +95,7 @@ button { text-transform:uppercase; font-size: 19px; font-weight: bold; letter-sp
 .carousel img { box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3); max-width: 100%; }
 
 /* Consultant */
-.consult { display: grid; max-width: 1470px; border-radius: 3px; background-color: #FFFFFF; box-shadow: 2px 3px 16px 0 rgba(0,0,0,0.15); }
+.consult { display: grid; margin:20px auto; max-width: 1470px; border-radius: 3px; background-color: #FFFFFF; box-shadow: 2px 3px 16px 0 rgba(0,0,0,0.15); }
 .consult header { font-family: 'Century Gothic', Helvetica, Arial, sans-serif; text-transform: uppercase; color: #8E8A93; font-size: 22px; font-weight: 500; line-height: 27px; }
 .consult p { color: #070918; font-size: 32px; line-height: 44px; }
 .consult .ico   { height: 105px; width: 75px; }
@@ -138,16 +138,20 @@ button { text-transform:uppercase; font-size: 19px; font-weight: bold; letter-sp
 .news-carousel img { border-radius:3px; width: 100%; }
 
 /* Organiser Carousel */
-.organiser-carousel { display: grid; grid-gap: 20px; }
-.organiser-carousel img { border-radius:3px; width: 100%; }
-.organiser-carousel-content { background-color: #FFFFFF; box-shadow: 2px 3px 16px 0 rgba(0,0,0,0.15); }
-.organiser-carousel-content header { color: #8E8A93; font-size: 22px; font-weight: 500; line-height: 27px; text-align: center; }
-.organiser-carousel-content title  { color: #4D4E59; font-size: 40px; font-weight: bold; line-height: 49px; text-align: center; text-shadow: 0 1px 8px 0 #131021; }
-.organiser-carousel-content p { color: #4D4E59; font-size: 23px; font-weight: 500; line-height: 44px; }
-.organiser-carousel-controls  { border-radius: 29.89px; background-color: #FFFFFF; box-shadow: 2px 3px 16px 0 rgba(0,0,0,0.15); }
+.organiser-carousel { display: grid; position: relative; grid-gap: 20px; }
+.organiser-carousel-bg  { max-width:1920px; background-color: #C74E4E;}
+.organiser-carousel img { max-width:1074px; width: 100%; }
+.organiser-carousel-content { position: absolute; top:100px; right:100px; max-height:850px; max-width: 735px; padding:20px 30px; background-color: #FFFFFF; box-shadow: 2px 3px 16px 0 rgba(0,0,0,0.15); }
+.organiser-carousel-content header{ font-family: 'Montserrat', sans-serif; color: #8E8A93; font-size: 22px; font-weight: 500; line-height: 27px; text-align: center; text-transform:uppercase; }
+.organiser-carousel-content h3    { font-family: 'Century Gothic', Helvetica, Arial, sans-serif; color: #4D4E59; font-size: 40px; font-weight: bold; line-height: 49px; text-align: center; text-shadow: 0 1px 8px 0 #131021; }
+.organiser-carousel-content p { color: #4D4E59; font-size: 23px; font-weight: 500; line-height: 44px; padding-bottom:30px; }
+.organiser-carousel-content button { display: grid; align-items: center; margin: auto; }
+.organiser-carousel-controls  { display:grid; grid-template-columns:1fr 1fr 1fr; padding:30px; }
+.organiser-carousel-controls .lhs, 
+.organiser-carousel-controls .rhs { border-radius: 29.89px; background-color: #FFFFFF; box-shadow: 2px 3px 16px 0 rgba(0,0,0,0.15); }
 
 /* Planning Banner */
-.plan-banner { background-color: rgba(199,78,78,0.9); padding:90px; }
+.plan-banner { display: grid; grid-template-columns: 2fr 1fr; background-color: rgba(199,78,78,0.9); padding:90px; }
 .plan-banner header  { position: relative; font-family: 'Century Gothic', Helvetica, Arial, sans-serif; color: var(--white); padding-right:30px; font-size: 42px; font-weight: bold; line-height: 52px; text-shadow: 0 1px 8px 0 #131021; }
 .plan-banner header::after { position: absolute; content: ""; border-right: 1px solid var(--white); height:100%; right: 0; }  
 .plan-banner button   { background:transparent; border: 2px solid #FFFFFF; width:270px; border-radius: 3px; }
@@ -155,7 +159,7 @@ button { text-transform:uppercase; font-size: 19px; font-weight: bold; letter-sp
 
 /* Info Points */
 .info-points { display: grid; grid-template-columns: repeat(3,1fr); }
-.info-points-caption { font-family: "Century Gothic", Helvetica, Arial, sans-serif; font-size: 40px; letter-spacing: -0.46px; line-height: 49px; text-align: center; }
+.info-points-caption { font-family: 'Century Gothic', Helvetica, Arial, sans-serif; font-size: 40px; letter-spacing: -0.46px; line-height: 49px; text-align: center; }
 
 /* Subscribe */
 .subscribe { display: grid; grid-template-columns: repeat(1, 1fr); place-items: center center; background-color: rgba(77,78,89,0.95); padding:70px; }

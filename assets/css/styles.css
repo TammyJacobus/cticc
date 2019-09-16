@@ -27,6 +27,9 @@ a   { color:inherit; text-decoration: none; cursor: pointer; }
 hr  { display:table-caption; width:100%; border-bottom: 2px solid rgba(167,169,172,0.59); opacity: 0.5; margin:30px auto; }
 img { max-width: 100%; }
 
+/* Spacing */
+.padded { padding: 30px; }
+
 /* List Items */
 ul, li { list-style-type: none; font-size: 23px; line-height: 28px; margin:0; padding:0; }
 
@@ -62,9 +65,10 @@ button:hover { background: #A7A9AC; color:var(--white); }
 .button-sustainability:hover { border: 2px solid var(--sustainability); background-color:var(--sustainability); color:var(--white); }
 
 /* Container */
-.wrapper { display: grid; max-width: 1920px; }
-.contain { display: grid; max-width: 1470px; margin: auto; }
-.header  { display: grid; position: relative; width: 100%; height: 100%; }
+.wrapper  { display: grid; max-width: 1920px; }
+.contain  { display: grid; max-width: 1470px; margin: auto; }
+.constrain{ display: grid; max-width: 1270px; margin: 30px auto 4rem; }
+.header   { display: grid; position: relative; width: 100%; height: 100%; }
 
 /* Hero Banner */
 .hero-banner      { background: url(../img/banners/banner_home.png) no-repeat; background-size: cover; width:100%; max-width: 1920px; height: 1080px; z-index: -1; }
@@ -75,13 +79,22 @@ button:hover { background: #A7A9AC; color:var(--white); }
 .banner { display: grid; justify-items: center; background-size: cover; width:100%; min-height: 390px; z-index: -1; background: var(--white); }
 .banner-inner { position: absolute; bottom: 0; left: 30%; padding: 40px 50px; width: max-content; margin: 0; border-radius: 3px; background-color: rgba(77,78,89,0.6); }
 .banner-inner h2,
-.banner-inner-content h2 { font-family: 'Century Gothic SemiBold', Helvetica, Arial, sans-serif; color: var(--white); font-size: 50px; font-weight: bold; line-height: 60px; font-style: normal; text-align: center; text-shadow: 0 2px 19px 0 rgba(19,16,33,0.24); }
-.banner-inner-content p { font-family: 'Montserrat', sans-serif; color: var(--white); font-size: 25px; line-height: 41px; text-align: center; }
-.banner-inner-content { margin: 30px; padding: 30px; }
+.banner-inner-content h2 { font-family: 'Century Gothic SemiBold', Helvetica, Arial, sans-serif; position: relative; color: var(--white); font-size: 50px; font-weight: bold; line-height: 60px; font-style: normal; text-align: center; text-shadow: 0 2px 19px 0 rgba(19,16,33,0.24); }
+.banner-inner-content p  { font-family: 'Montserrat', sans-serif; color: var(--white); font-size: 25px; line-height: 41px; text-align: center; max-width: 900px; }
+.banner-inner-content { display: grid; align-items: center; margin: 30px; padding: 30px; }
+.banner-inner-content h2::after { position:absolute; content:""; border-bottom:2px solid #FFF; width:35px; bottom:-15px; left:49%; }
+
+/* Carpark */
+.carpark { display: grid; background: var(--white); box-shadow: 2px 3px 16px 0 rgba(0,0,0,0.15); }
+.carpark img { margin: auto; max-width:1270px; }
+.carpark-parking { display: grid; }
+.carpark-parking ul { display: grid; height: 80px; }
+.carpark-parking li { padding: 30px; }
 
 /* Tips */
-.tips { display: grid; background-color: var(--white); box-shadow: 2px 3px 16px 0 rgba(0,0,0,0.15); padding:30px; }
-.tips header { color: var(--darkness); font-size: 35px; line-height: 43px; }
+.tips { display: grid; background-color: var(--white); box-shadow: 2px 3px 16px 0 rgba(0,0,0,0.15); padding:30px; margin: 30px; }
+.tips header { font-family: 'Century Gothic SemiBold', Helvetica, Arial, sans-serif; font-weight: bold; color: var(--darkness); font-size: 35px; line-height: 43px; }
+.tips a { font-family: 'Montserrat Bold', sans-serif; text-decoration: underline; color: var(--visitor); }
 
 /* Menu */
 .menu    { display: grid; grid-template-columns: repeat(7, 1fr); }
@@ -131,7 +144,10 @@ button:hover { background: #A7A9AC; color:var(--white); }
 .content-header p { max-width: 1120px; margin:0 auto; font-size: 25px; line-height: 41px; text-align: center; }
 .content-header button a { font-family: 'Montserrat', sans-serif; text-transform: uppercase; font-size: 19px; font-weight: bold; letter-spacing: 0.5px; color: #A7A9AC; }
 
-.gallery { display: grid; max-width: 1470px; padding:40px; margin:auto; grid-template-columns: repeat(3, 1fr); grid-gap: 30px; }
+.gallery { display: grid; max-width: 1470px; padding:40px; margin:auto; grid-auto-flow: column dense; grid-gap: 30px; }
+.gallery header  { font-family: 'Montserrat SemiBold', sans-serif; padding:20px 0; font-size: 35px; line-height: 43px; color: var(--darkness); text-shadow: 0 1px 8px 0 #131021; }
+.gallery .header { font-family: 'Century Gothic', Helvetica, Arial, sans-serif; color: #1F212F; font-size: 24px; line-height: 29px; font-weight: bold; text-shadow: 0 1px 8px 0 #131021; }
+.gallery .ico-2  { height: 52px; width: 52px; }
 .gallery-wrapper { padding:20px 30px; }
 
 /* Gallery 1 */
@@ -280,8 +296,8 @@ button:hover { background: #A7A9AC; color:var(--white); }
 .plan-banner button a { color: var(--white); text-decoration: none; }
 
 /* Experience Points */
-.experience-points-wrapper { display: grid; justify-content:space-between; align-content:space-between; max-width: 1470px; margin: 40px auto; grid-template-columns: 400px 400px 400px; }
-.experience-points { padding:20px; border-radius: 3px; background-color: var(--white); box-shadow: 0 5px 14px 0 rgba(0,0,0,0.15); }
+.experience-points-wrapper { display: grid; justify-self: stetch; grid-auto-flow: column; /*justify-content:space-between; align-content:space-between; grid-template-columns: 400px 400px 400px;*/ max-width: 1470px; margin: 40px auto; }
+.experience-points { padding:20px; margin:20px; border-radius: 3px; background-color: var(--white); box-shadow: 0 5px 14px 0 rgba(0,0,0,0.15); }
 .experience-points-ico { display: grid; place-items: center center; height: 65px; width: 65px; border-radius: 100px; background-color: rgba(193,168,76,0.1); }
 .experience-points-caption { font-family: 'Century Gothic Bold', Helvetica, Arial, sans-serif; color: var(--darkness); font-size: 35px; font-weight: bold; line-height: 43px; text-shadow: 0 1px 8px 0 #131021; padding: 10px 0; }
 .visitor-fill img { fill: #C1A84C !important; }

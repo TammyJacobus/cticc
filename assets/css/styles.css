@@ -303,7 +303,7 @@ button:hover { background: #A7A9AC; color:var(--white); }
 .visitor-fill img { fill: #C1A84C !important; }
 
 /* Info Points */
-.info-points-wrapper { display: grid;  justify-content: space-between; align-content: space-between; max-width: 1470px; margin: 40px auto; grid-template-columns: 450px 450px 450px; }
+.info-points-wrapper { display: grid;  justify-content: space-between; align-content: space-between; max-width: 1470px; margin: 40px auto; grid-template-columns: 1fr 1fr 1fr; }
 .info-points { display: grid; align-items: end; height: 250px }
 .info-points-ico { display: grid; place-items: center center; }
 .info-points-caption { font-family: 'Century Gothic', Helvetica, Arial, sans-serif; font-size: 40px; letter-spacing: -0.46px; line-height: 49px; text-align: center;  }

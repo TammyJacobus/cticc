@@ -25,10 +25,11 @@ html{ font-family: 'Century Gothic', Helvetica, Arial, sans-serif; font-size: 20
 p   { font-family: 'Montserrat', sans-serif; font-size: 23px; color: var(--grey); font-weight: 500; }
 a   { color:inherit; text-decoration: none; cursor: pointer; }
 hr  { display:table-caption; width:100%; border-bottom: 2px solid rgba(167,169,172,0.59); opacity: 0.5; margin:30px auto; }
-img { max-width: 100%; }
+img { display: grid; max-width: 100%; }
 
 /* Spacing */
 .padded { padding: 30px; }
+.center { margin: auto; text-align: center; }
 
 /* List Items */
 ul, li { list-style-type: none; font-size: 23px; line-height: 28px; margin:0; padding:0; }
@@ -85,6 +86,7 @@ button:hover { background: #A7A9AC; color:var(--white); }
 .banner-inner-content p  { font-family: 'Montserrat', sans-serif; color: var(--white); font-size: 25px; line-height: 41px; text-align: center; max-width: 900px; }
 .banner-inner-content { display: grid; align-items: center; margin: 30px; padding: 30px; }
 .banner-inner-content h2::after { position:absolute; content:""; border-bottom:2px solid #FFF; width:35px; bottom:-15px; left:49%; }
+.banner-inner-content button { border:2px solid var(--white); color: var(--white); cursor: pointer; }
 
 /* Carpark */
 .carpark { display: grid; background: var(--white); box-shadow: 2px 3px 16px 0 rgba(0,0,0,0.15); }
@@ -146,8 +148,8 @@ button:hover { background: #A7A9AC; color:var(--white); }
 .content-header p { max-width: 1120px; margin:0 auto; font-size: 25px; line-height: 41px; text-align: center; }
 .content-header button a { font-family: 'Montserrat', sans-serif; text-transform: uppercase; font-size: 19px; font-weight: bold; letter-spacing: 0.5px; color: #A7A9AC; }
 
-.gallery { display: grid; max-width: 1470px; padding:40px; margin:auto; grid-auto-flow: column dense; grid-gap: 30px; }
-.gallery header  { font-family: 'Montserrat SemiBold', sans-serif; padding:20px 0; font-size: 35px; line-height: 43px; color: var(--darkness); text-shadow: 0 1px 8px 0 #131021; }
+.gallery { display: grid; max-width: 1470px; padding:40px; margin:auto; grid-auto-flow: column dense; grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); grid-gap: 30px; }
+.gallery  header { font-family: 'Montserrat SemiBold', sans-serif; padding:20px 0; font-size: 35px; line-height: 43px; color: var(--darkness); text-shadow: 0 1px 8px 0 #131021; }
 .gallery .header { font-family: 'Century Gothic', Helvetica, Arial, sans-serif; color: #1F212F; font-size: 24px; line-height: 29px; font-weight: bold; text-shadow: 0 1px 8px 0 #131021; }
 .gallery .ico-2  { height: 52px; width: 52px; }
 .gallery-wrapper { padding:20px 30px; }
@@ -196,6 +198,31 @@ button:hover { background: #A7A9AC; color:var(--white); }
 /* Gallery Tags */
 .gallery-date-tag    { font-family: 'Montserrat SemiBold', sans-serif; text-transform: uppercase; position:absolute; top:25px; left:25px; padding:10px 15px; border-radius: 3px; background-color: var(--white); color: var(--dark); font-weight: bold; font-size: 25px; line-height: 30px; text-align: center; }
 .gallery-special-tag { font-family: 'Montserrat SemiBold', sans-serif; text-transform: uppercase; margin-bottom:15px; padding:10px 15px; border-radius: 2.97px; background-color: var(--red-tag); color: var(--white); font-weight: bold; font-size: 20px; letter-spacing: 0.5px; line-height: 24px; text-align: center; opacity: 0.8; }
+
+/* Service Gallery */
+.service-gallery   { display:grid; grid-template-columns: 870px 1fr; margin: 60px auto; }
+.service-gallery p { font-family: 'Century Gothic', Helvetica, Arial, sans-serif; font-size: 25px; line-height: 36px; margin:15px 0 0 0; color: #070918; }
+.service-gallery header{ font-family: 'Montserrat SemiBold', sans-serif; text-transform: uppercase; font-weight: 500; font-size: 22px; line-height: 27px; color: #8E8A93; }
+.service-gallery-main  { grid-row: span 4; }
+.service-gallery-thumb { padding: 0 30px; }
+.service-gallery-thumb .item { display:grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); margin: 0 0 15px 0; }
+
+/* Culture & Values */
+.values { display: grid; max-width: 1470px; padding:20px; margin:auto; grid-auto-flow: column dense; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); grid-gap: 20px; }
+.values .item { display: grid; min-height: 235px; padding:20px; background-color: var(--white); box-shadow: 2px 3px 16px 0 rgba(0,0,0,0.15); }
+.values .ico  { position:relative; width:65px; height:65px; border-radius: 100%; }
+.values header{ display: grid; align-items: end; font-family: 'Century Gothic Bold', Helvetica, Arial, sans-serif; padding:20px 0; font-size: 33px; line-height: 39px; color: var(--darkness); text-shadow: 0 2px 24px 0 rgba(0,0,0,0.26); }
+
+/* Listing */
+.listing { max-width: 1015px; margin: 30px auto; }
+.listing blockquote { font-family: 'Montserrat SemiBold', sans-serif; margin: 0;  padding: 15px; color: #8E8A93; background-color: #F2F0F0; text-align: center; font-size: 23px; line-height: 39px; font-weight: bold; }
+.listing h2 { position: relative; text-transform: uppercase; font-style: normal; font-size: 22px; line-height: 27px; padding: 20px 0; border-top: 1px solid #F2F0F0; border-bottom: 1px solid #F2F0F0; margin:30px auto; color: #8E8A93; font-size: 22px; line-height: 27px; font-weight: 500; }
+.listing h2 span{ position: absolute; font-family: 'Montserrat SemiBold', sans-serif; text-decoration: underline; font-weight: bold; right: 0; color: var(--careers); font-size: 20px; }
+.listing .header{ font-family: 'Century Gothic Bold', Helvetica, Arial, sans-serif; color: #1F212F; font-weight: bold; font-size: 32px; line-height: 39px; text-shadow: 0 1px 8px 0 #131021; }
+.listing header { color: var(--careers); font-size: 25px; line-height: 44px; font-weight: bold; } 
+.listing ul { margin: 0 0 20px 20px; }
+.listing li { list-style-type: disc; line-height: 44px; color: var(--grey) }
+
 
 /* Event Banner */
 .event-banner   { display: grid; margin:20px; place-content: center center; }
@@ -265,13 +292,23 @@ button:hover { background: #A7A9AC; color:var(--white); }
 
 /* Browser */
 .browser { display: grid; max-width: 1330px; margin:auto; }
-.store-wrapper { display: grid; grid-template-columns: 450px 1fr; padding:30px 0; border-bottom: 2px solid rgba(167,169,172,0.59); }
+.store-wrapper { display: grid; grid-template-columns: 450px 1fr; padding: 30px 0; border-bottom: 2px solid rgba(167,169,172,0.59); }
 .store { max-width: 430px; overflow: hidden; }
 .store img { object-fit: cover; object-position: 0 40%; height: 270px; width: 100%; }
 .store-details header { color: var(--grey); padding-bottom:10px; font-size: 22px; line-height: 27px; font-weight: 500; text-transform: uppercase; font-family: 'Montserrat', sans-serif;}
 .store-details h2 { color: var(--dark); font-size: 40px; line-height: 44px; font-style: normal; font-family: 'Century Gothic', Helvetica, Arial, sans-serif; }
 .store-details p  { line-height: 37px;}
 .store-details button { width: 275px; height: 65px; }
+
+.program-wrapper { display: grid; grid-template-columns: 1fr 1fr; margin: 30px 0; border-radius: 3px; box-shadow: 2px 3px 16px 0 rgba(0,0,0,0.15); }
+.program-wrapper-details { padding: 15px 30px; }
+.program-wrapper-details h2 { font-family: 'Century Gothic Bold', Helvetica, Arial, sans-serif; font-style: bold; color: var(--dark); font-style: normal; font-size: 35px; line-height: 60px; text-shadow: 0 1px 8px 0 #131021; border-bottom: 2px solid rgba(167,169,172,0.59); }
+
+.team-wrapper { display: grid; grid-template-columns: 450px 1fr; padding: 30px 0; }
+.team-details { display: grid; text-align: center; align-items: center; }
+.team-details header { color: var(--grey); padding-bottom:10px; font-size: 22px; line-height: 27px; font-weight: 500; text-transform: uppercase; font-family: 'Montserrat', sans-serif;}
+.team-details p   { color: #1F212F; font-size: 37px; text-shadow: 0 1px 8px 0 #131021; font-family: 'Century Gothic', Helvetica, Arial, sans-serif; }
+.team-details span{ color: var(--grey); }
 
 /* Parking Rates */
 .parking { display: grid; max-width: 1470px; grid-template-columns: 470px 470px 470px; grid-gap: 30px; margin: auto; }
@@ -292,7 +329,7 @@ button:hover { background: #A7A9AC; color:var(--white); }
 .documents a { padding-right: 10px; font-family: 'Montserrat SemiBold', sans-serif; text-align: right; text-transform: uppercase; font-size: 20px; line-height: 31px; letter-spacing: 0.5px; color: var(--exhibitor); }
 .documents a:first-of-type { border-right: 2px solid #D8D9DA; }
 .documents p { color: var(--grey); line-height: 39px; margin-bottom: 20px; }
-.documents .ico { position:absolute; left:-70px; top:20px; height: 70px; width: 70px; border-radius: 100%; background-color: #FFFFFF; box-shadow: 2px 3px 10px 0 rgba(0,0,0,0.15); }
+.documents .ico   { position:absolute; left:-70px; top:20px; height: 70px; width: 70px; border-radius: 100%; background-color: #FFFFFF; box-shadow: 2px 3px 10px 0 rgba(0,0,0,0.15); }
 .documents header { font-family: 'Century Gothic Bold', Helvetica, Arial, sans-serif; font-weight: bold; margin-bottom: 20px; color: var(--black); font-size: 30px; line-height: 37px; }
 
 /* Planning Banner */
@@ -303,12 +340,14 @@ button:hover { background: #A7A9AC; color:var(--white); }
 .plan-banner button { background:transparent; border: 2px solid var(--white); width:270px; border-radius: 3px; }
 .plan-banner button a { color: var(--white); text-decoration: none; }
 
+.plan-banner p{ font-family: 'Century Gothic', Helvetica, Arial, sans-serif; font-weight: bold; font-size: 35px; line-height: 44px; color: #FFFFFF; text-shadow: 0 1px 8px 0 #131021; }
+
 .sus-banner   { display: grid; grid-template-columns: 1fr 2fr; padding:90px; }
 .sus-banner p { display:grid; align-items:center; font-family: 'Montserrat', sans-serif; border-left: 1px solid var(--white); color: var(--white); padding-left: 60px; padding-right: 60px; font-size: 25px; font-weight: bold; line-height: 41px; }
 .sus-banner .ico { display: grid; place-items: center center; }
 
 /* Experience Points */
-.experience-points-wrapper { display: grid; justify-self: stetch; grid-auto-flow: column; /*justify-content:space-between; align-content:space-between; grid-template-columns: 400px 400px 400px;*/ max-width: 1470px; margin: 40px auto; }
+.experience-points-wrapper { display: grid; justify-self: stetch; grid-auto-flow: column; grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); max-width: 1470px; margin: 40px auto; }
 .experience-points { padding:20px; margin:20px; border-radius: 3px; background-color: var(--white); box-shadow: 0 5px 14px 0 rgba(0,0,0,0.15); }
 .experience-points-ico { display: grid; place-items: center center; height: 65px; width: 65px; border-radius: 100px; background-color: rgba(193,168,76,0.1); }
 .experience-points-caption { font-family: 'Century Gothic Bold', Helvetica, Arial, sans-serif; color: var(--darkness); font-size: 35px; font-weight: bold; line-height: 43px; text-shadow: 0 1px 8px 0 #131021; padding: 10px 0; }

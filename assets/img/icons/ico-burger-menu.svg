@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="59px" height="51px" viewBox="0 0 59 51" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 57.1 (101010) - https://sketch.com -->
+    <title>D1773C08-FEF0-40CB-86FB-6B10DC10E7D4</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <filter x="-7.5%" y="-44.3%" width="115.0%" height="188.6%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="7" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.14 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Exhibitor" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="4-exhibitor_landing_mobi" transform="translate(-8.000000, -12.000000)" fill="#4D4E59" fill-rule="nonzero">
+            <g id="top_nav_mobi_white">
+                <g filter="url(#filter-1)" id="top-nav">
+                    <g>
+                        <path d="M22,24 L22,28.1818169 L53,28.1818169 L53,24 L22,24 Z M22,33.4090881 L22,37.5909119 L53,37.5909119 L53,33.4090881 L22,33.4090881 Z M22,42.8181831 L22,47 L53,47 L53,42.8181831 L22,42.8181831 Z" id="ic_menu"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

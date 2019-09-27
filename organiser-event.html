@@ -8,7 +8,7 @@
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="assets/js/scripts.js"></script>
-    <title>CTICC - Organiser</title>
+    <title>CTICC - Organiser | Event</title>
 </head>
 
 <body>
@@ -16,45 +16,188 @@
     <div class="wrapper">
         <div class="header">
 
-            <!-- Hero Image -->
-            <div class="banner"><img src="assets/img/banners/banner_organiser.png"></div>
-            <div class="banner-content">
-                <h1>Experience Extraordinary</h1>
-                <p>Infinitely More than a World-Class Convention Centre</p>
-            </div>
             <!-- Menu  -->
+            <div class="nav-container">
+                <nav>
+                    <input type="checkbox" id="nav-toggle">
+                    <label for="nav-toggle" class="burger-menu">
+                        <img src="assets/img/icons/ico-burger-menu.svg" alt="">
+                    </label>
+                    <div class="nav-items">
+                        <a href="">Organiser</a>
+                        <a href="">Visitor</a>
+                        <a href="">Exhibitor</a>
+                        <a href="">Supplier</a>
+                        <a href="">Sustainablity</a>
+                        <a href="">Careers</a>
+                    </div>
+                    <a href="#" class="logo">CTICC</a>
+                </nav>
+            </div>
+
+            <!-- Hero Image -->
+            <div class="banner organiser">
+                <div class="banner-inner-content">
+                    <h2>Event Type</h2>
+                    <form>
+                        <select>
+                            <option>Conferences &amp; Conventions</option>
+                        </select>
+                    </form>
+                </div>
+            </div>
+
         </div>
         <!-- Content -->
         <div class="content">
 
-            <!-- Event Gallery -->
+            <!-- Past Events -->
             <div class="content-header">
-                <header>What's on</header>
+                <header>Conferences &amp; Conventions</header>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi interdum semper dignis curabitur
+                    maximus dolor gravida quam tristique, non eleifend sapien maxus. </p>
             </div>
 
-            <!-- Gallery -->
-            <div class="gallery gallery-4">
-                <div class="item item1"><img src="assets/img/img/img-conference.png">
-                    <div class="caption">17th World Conference on Tobacco or Health</div>
+            <!-- Venue Spaces -->
+            <div class="bg-grey">
+                <div class="content-header">
+                    <header>Recommended Venue Spaces</header>
+                    <button>
+                        <a href="">View All Venue Options</a>
+                    </button>
                 </div>
-                <div class="item item2"><img src="assets/img/img/img-exhibitions.png">
-                    <div class="caption">Mining indaba</div>
-                </div>
-                <div class="item item3"><img src="assets/img/img/img-meetings.png">
-                    <div class="caption">24th International Meeting on Advanced Spine Techniques 2017</div>
+
+                <div class="contain">
+
+                    <!-- Auditorim -->
+                    <div class="spaces">
+                        <div class="inner">
+                            <header>Auditorium 1</header>
+
+                            <div class="detail">
+                                <div class="unit">
+                                    <img src="assets/img/icons/ico-spaces-area.svg" />
+                                    <p>Area: <span>1170 m2/ 12593 ft</span></p>
+                                </div>
+                                <div class="unit">
+                                    <img src="assets/img/icons/ico-spaces-length.svg" />
+                                    <p>Length: <span>47 m</span></p>
+                                </div>
+                                <div class="unit">
+                                    <img src="assets/img/icons/ico-spaces-width.svg" />
+                                    <p>Width: <span>Splayed</span></p>
+                                </div>
+                                <div class="unit">
+                                    <img src="assets/img/icons/ico-spaces-height.svg" />
+                                    <p>Height: <span>16 m</span></p>
+                                </div>
+                            </div>
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut
+                                labore et dolore magna aliqua ut enim ad minim veniam.</p>
+                            <a href="">more info</a>
+                        </div>
+                        <div>
+                            <img src="assets/img/img/img-auditorium.png" />
+                        </div>
+                    </div>
+
+                    <!-- Ballroom -->
+                    <div class="spaces">
+                        <div class="inner">
+                            <header>Ballroom East</header>
+
+                            <div class="detail">
+                                <div class="unit">
+                                    <img src="assets/img/icons/ico-spaces-area.svg" />
+                                    <p>Area: <span>1170 m2/ 12593 ft</span></p>
+                                </div>
+                                <div class="unit">
+                                    <img src="assets/img/icons/ico-spaces-length.svg" />
+                                    <p>Length: <span>47 m</span></p>
+                                </div>
+                                <div class="unit">
+                                    <img src="assets/img/icons/ico-spaces-width.svg" />
+                                    <p>Width: <span>Splayed</span></p>
+                                </div>
+                                <div class="unit">
+                                    <img src="assets/img/icons/ico-spaces-height.svg" />
+                                    <p>Height: <span>16 m</span></p>
+                                </div>
+                            </div>
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut
+                                labore et dolore magna aliqua ut enim ad minim veniam.</p>
+                            <a href="">more info</a>
+                        </div>
+                        <div>
+                            <img src="assets/img/img/img-ballroom.png" />
+                        </div>
+                    </div>
+
+                    <!-- Exhibition -->
+                    <div class="spaces">
+                        <div class="inner">
+                            <header>Exhibition Hall 4A</header>
+
+                            <div class="detail">
+                                <div class="unit">
+                                    <img src="assets/img/icons/ico-spaces-area.svg" />
+                                    <p>Area: <span>1170 m2/ 12593 ft</span></p>
+                                </div>
+                                <div class="unit">
+                                    <img src="assets/img/icons/ico-spaces-length.svg" />
+                                    <p>Length: <span>47 m</span></p>
+                                </div>
+                                <div class="unit">
+                                    <img src="assets/img/icons/ico-spaces-width.svg" />
+                                    <p>Width: <span>Splayed</span></p>
+                                </div>
+                                <div class="unit">
+                                    <img src="assets/img/icons/ico-spaces-height.svg" />
+                                    <p>Height: <span>16 m</span></p>
+                                </div>
+                            </div>
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut
+                                labore et dolore magna aliqua ut enim ad minim veniam.</p>
+                            <a href="">more info</a>
+                        </div>
+                        <div>
+                            <img src="assets/img/img/img-exhibition-hall.png" />
+                        </div>
+                    </div>
+
+                    <button>
+                        <a href="">View all venue options</a>
+                    </button>
+
                 </div>
             </div>
 
-            <!-- Consult Banner -->
-            <div class="consult">
-                <div class="content-group">
-                    <header>Have something else in mind?</header>
-                    <p>Get in touch with a consultant</p>
+            <!-- Experience Points -->
+            <div class="experience-points-wrapper">
+                <div class="experience-points">
+                    <div class="experience-points-ico"><img src="assets/img/icons/ico_info.svg"></div>
+                    <div class="experience-points-caption">Event Planning <br>documents</div>
                 </div>
-                <div class="button-group">
-                    <button><a
-                            href="mailto:janedoe@cticcevents.co.za>janedoe@cticcevents.co.za">janedoe@cticcevents.co.za</a></button>
-                    <button><a href="tel:+27218537217890">(021) 853 721 7890</a></button>
+
+                <div class="experience-points">
+                    <div class="experience-points-ico"><img src="assets/img/icons/ico_transport.svg"></div>
+                    <div class="experience-points-caption">Explore our <br>venues</div>
+                </div>
+
+                <div class="experience-points">
+                    <div class="experience-points-ico"><img src="assets/img/icons/ico_faq.svg"></div>
+                    <div class="experience-points-caption">Experience <br>Cape Town</div>
+                </div>
+
+                <div class="experience-points">
+                    <div class="experience-points-ico"><img src="assets/img/icons/ico_faq.svg"></div>
+                    <div class="experience-points-caption">Parking &amp; <br>Logistics</div>
                 </div>
             </div>
 
@@ -112,6 +255,11 @@
                 <div class="experience-points">
                     <div class="experience-points-ico"><img src="assets/img/icons/ico_ct.svg" /></div>
                     <div class="experience-points-caption">Experience <br>Cape Town</div>
+                </div>
+
+                <div class="experience-points">
+                    <div class="experience-points-ico"><img src="assets/img/icons/ico-banquets-galas.svg" /></div>
+                    <div class="experience-points-caption">Parking &amp; <br>Logistics</div>
                 </div>
             </div>
 

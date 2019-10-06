@@ -23,7 +23,7 @@
 }
 
 html{ font-family: 'Century Gothic', Helvetica, Arial, sans-serif; font-size: 20px; }
-body{ display: grid; grid-template-rows: auto 1fr auto; height: 100vh; margin:0; }
+body{ display: grid; grid-template-rows: auto 1fr auto; height: 100vh; margin: 0; }
 p   { font-family: 'Montserrat', sans-serif; font-size: 23px; color: var(--grey); font-weight: 500; }
 a   { color:inherit; text-decoration: none; cursor: pointer; }
 hr  { display:table-caption; width:100%; border-bottom: 1px solid rgba(167,169,172,0.59); opacity: 0.5; margin:30px auto; }
@@ -112,6 +112,12 @@ button:hover { background: #A7A9AC; color:var(--white); }
 .tips header { font-family: 'Century Gothic SemiBold', Helvetica, Arial, sans-serif; font-weight: bold; color: var(--darkness); font-size: 35px; line-height: 43px; }
 .tips a { font-family: 'Montserrat Bold', sans-serif; text-decoration: underline; color: var(--visitor); }
 
+/* Supply Chain */
+.supply-chain-wrapper { background-color: var(--white); box-shadow: 2px 3px 16px 0 rgba(0,0,0,0.15); padding: 70px; }
+.supply-chain-wrapper span  { font-family: 'Montserrat', sans-serif; color: var(--grey); display:block; text-transform: uppercase; font-size: 22px; line-height: 27px; text-align: center; }
+.supply-chain-wrapper header{ font-family: 'Century Gothic SemiBold', Helvetica, Arial, sans-serif; font-weight: bold; text-align: center; }
+.supply-chain { display: grid; grid-template-columns: 1fr 1fr; }
+
 /* Menu */
 .menu    { font-family: 'Century Gothic', Helvetica, Arial, sans-serif; }
 .menu li { display: inline; margin: 0 20px; list-style: none; color: var(--beige); }
@@ -150,9 +156,12 @@ button:hover { background: #A7A9AC; color:var(--white); }
 .content { position: relative; }
 
 /* */
-.content-accordion { display: grid; border-bottom: 1px solid rgba(167,169,172,0.59); font-size: 40px; color: var(--black); text-shadow: 0 1px 8px 0 #131021; padding:30px 0; }
-.content-accordion:hover +
+.content-accordion { display: grid; position: relative; border-bottom: 1px solid rgba(167,169,172,0.59); font-size: 40px; color: var(--black); text-shadow: 0 1px 8px 0 #131021; padding: 30px 30px 30px 0; }
+.content-accordion:after { position: absolute; right:0; bottom:30%; content: "+"; }
+.content-accordion:hover + 
 .content-accordion-description { max-height: 100%; transition: max-height 0.4s ease-in; }
+.content-accordion:hover::after + 
+.content-accordion-description { position: absolute; right: 0; top: 50%; content: "-"; }
 .content-accordion-description { max-height: 0; overflow: hidden; transition: max-height 0.15s ease-in; }
 .content-accordion-description div { line-height: 42px; }
 
@@ -190,7 +199,7 @@ button:hover { background: #A7A9AC; color:var(--white); }
 
 .gallery.staff { display: grid; grid-template-columns:repeat(4, 1fr); max-width: 1380px; grid-auto-flow: dense; }
 .gallery .name  { font-family: 'Century Gothic', Helvetica, Arial, sans-serif; padding-top: 10px; font-size: 32px; line-height: 35px; text-transform: capitalize; color: #070918; }
-.gallery .title { font-family: 'Montserrat', sans-serif; padding-top: 10px; font-size: 22px; line-height: 27px; text-transform: uppercase; color: #8E8A93; }
+.gallery .title { font-family: 'Montserrat', sans-serif; padding-top: 10px; font-size: 22px; line-height: 27px; text-transform: uppercase; color: var(--grey); }
 
 
 /* Gallery 1 */
@@ -242,7 +251,7 @@ button:hover { background: #A7A9AC; color:var(--white); }
 /* Service Gallery */
 .service-gallery   { display:grid; grid-template-columns: 870px 1fr; margin: 60px auto; }
 .service-gallery p { font-family: 'Century Gothic', Helvetica, Arial, sans-serif; font-size: 25px; line-height: 36px; margin:15px 0 0 0; color: #070918; }
-.service-gallery header{ font-family: 'Montserrat SemiBold', sans-serif; text-transform: uppercase; font-weight: 500; font-size: 22px; line-height: 27px; color: #8E8A93; }
+.service-gallery header{ font-family: 'Montserrat SemiBold', sans-serif; text-transform: uppercase; font-weight: 500; font-size: 22px; line-height: 27px; color: var(--grey); }
 .service-gallery-main  { grid-row: span 4; }
 .service-gallery-thumb { padding: 0 30px; }
 .service-gallery-thumb .item { display:grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); margin: 0 0 15px 0; }
@@ -260,7 +269,7 @@ button:hover { background: #A7A9AC; color:var(--white); }
 .spaces-package { display:grid; margin:0 auto 40px; grid-auto-flow: column; grid-template-columns: repeat(auto-fit, minmax(430px, 1fr)); background: var(--white); padding: 40px; }
 .spaces-package .package { display: grid; min-height: 190px; margin: 20px 0; grid-template-columns: 1fr; grid-template-rows: 1fr; border-top: 1px solid rgba(167,169,172,0.59); }
 .spaces-package .heading { font-family: 'Century Gothic Bold', Helvetica, Arial, sans-serif; color: #1F212F; font-size: 30px; line-height: 36px; }
-.spaces-package span { font-family: 'Montserrat', sans-serif; text-transform: uppercase; color: #8E8A93; font-size: 22px; line-height: 27px; }
+.spaces-package span { font-family: 'Montserrat', sans-serif; text-transform: uppercase; color: var(--grey); font-size: 22px; line-height: 27px; }
 .spaces-package .inner   { display: grid; margin: 0 15px; padding: 25px; border-radius: 3px; box-shadow: 2px 3px 16px 0 rgba(0,0,0,0.15); }
 .spaces-package .inner a { display: grid; border-top: 1px solid rgba(167,169,172,0.59); align-items: flex-end; font-family: 'Montserrat SemiBold', sans-serif; color: var(--organiser); font-weight: 500; font-size: 20px; text-transform: uppercase; text-decoration: underline; }
 .spaces-package .package img   { padding: 10px; margin:15px 15px 15px 0; width:20px; height:20px; border-radius:100%; background: var(--white); box-shadow: 2px 3px 16px 0 rgba(0,0,0,0.15); }
@@ -275,8 +284,8 @@ button:hover { background: #A7A9AC; color:var(--white); }
 
 /* Listing */
 .listing { max-width: 1015px; margin: 30px auto; }
-.listing blockquote { font-family: 'Montserrat SemiBold', sans-serif; margin: 0;  padding: 15px; color: #8E8A93; background-color: #F2F0F0; text-align: center; font-size: 23px; line-height: 39px; font-weight: bold; }
-.listing h2 { position: relative; text-transform: uppercase; font-style: normal; font-size: 22px; line-height: 27px; padding: 20px 0; border-top: 1px solid #F2F0F0; border-bottom: 1px solid #F2F0F0; margin:30px auto; color: #8E8A93; font-size: 22px; line-height: 27px; font-weight: 500; }
+.listing blockquote { font-family: 'Montserrat SemiBold', sans-serif; margin: 0;  padding: 15px; color: var(--grey); background-color: #F2F0F0; text-align: center; font-size: 23px; line-height: 39px; font-weight: bold; }
+.listing h2 { position: relative; text-transform: uppercase; font-style: normal; font-size: 22px; line-height: 27px; padding: 20px 0; border-top: 1px solid #F2F0F0; border-bottom: 1px solid #F2F0F0; margin:30px auto; color: var(--grey); font-size: 22px; line-height: 27px; font-weight: 500; }
 .listing h2 span{ position: absolute; font-family: 'Montserrat SemiBold', sans-serif; text-decoration: underline; font-weight: bold; right: 0; color: var(--careers); font-size: 20px; }
 .listing .header{ font-family: 'Century Gothic Bold', Helvetica, Arial, sans-serif; color: #1F212F; font-weight: bold; font-size: 32px; line-height: 39px; text-shadow: 0 1px 8px 0 #131021; }
 .listing header { color: var(--careers); font-size: 25px; line-height: 44px; font-weight: bold; }
@@ -293,18 +302,22 @@ button:hover { background: #A7A9AC; color:var(--white); }
 .event-carousel .event-content a { font-family: 'Montserrat SemiBold', sans-serif; text-decoration: underline; text-transform: uppercase; font-weight: 500; }
 
 /* Event Contain */
-.event-contain { display: grid; margin: auto; max-width: 1120px; background-color: var(--white); box-shadow: 2px 3px 16px 0 rgba(0,0,0,0.15); }
+.event-contain { display: grid; margin: 2rem auto; max-width: 1120px; background-color: var(--white); box-shadow: 2px 3px 16px 0 rgba(0,0,0,0.15); }
 .event-contain ul { padding: 30px; }
-.event-contain li { display:grid; height: 90px; align-items: center; grid-template-columns: 80px auto; border-bottom: 2px solid rgba(167,169,172,0.59); }
+.event-contain li { display:grid; min-height: 90px; align-items: center; grid-template-columns: 80px auto; border-bottom: 2px solid rgba(167,169,172,0.59); }
 .event-contain li:last-child { border-bottom: none; }
+
+.management-contain { display: grid; margin: 1rem auto; padding: 60px; max-width: 1020px; background-color: var(--white); box-shadow: 2px 3px 16px 0 rgba(0,0,0,0.15); }
+.management-contain-wrapper{ display:grid; grid-template-columns: 80px auto; }
+.management-contain header { font-family: 'Century Gothic Bold', Helvetica, Arial, sans-serif; color: #1F212F; font-size: 35px; line-height: 43px; text-shadow: 0 1px 8px 0 #131021; }
 
 /* Social Media */
 .social-media { display: grid; grid-template-columns: 45px 45px 45px; grid-gap: 20px; }
-.social-media .ico { display: grid; place-items:center center; width: 45px; height: 45px; box-shadow: 0 5px 9px 0 rgba(0,0,0,0.5); border-radius: 30px; margin-top: 20px; }
+.social-media .ico { display: grid; place-items:center center; width: 45px; height: 45px; box-shadow: 0 5px 9px 0 rgba(0,0,0,0.5); border:1px solid transparent; border-radius: 30px; margin-top: 20px; }
 .social-media .ico:hover { cursor: pointer; box-shadow: none; border:1px solid rgba(167,169,172,0.59); }
 
 /* Confirmation Block*/
-.confirmation { display: grid; grid-gap: 50px; grid-template-columns: repeat(3,1fr); margin: auto; padding-top: 50px; padding-bottom: 50px; font-family: 'Century Gothic', Helvetica, Arial, sans-serif; height: 100%; color: var(--black); font-size: 29px; line-height: 35px; }
+.confirmation { display: grid; grid-gap: 50px; grid-template-columns: repeat(3,1fr); margin: auto; padding-top: 50px; padding-bottom: 50px; font-family: 'Century Gothic', Helvetica, Arial, sans-serif; color: var(--black); font-size: 29px; line-height: 35px; }
 .confirmation header { font-family: 'Century Gothic Bold', Helvetica, Arial, sans-serif; margin:20px 0; color: var(--black); font-size: 29px; line-height: 35px; }
 .confirmation p { position: relative; }
 .confirmation a,
@@ -392,7 +405,7 @@ button:hover { background: #A7A9AC; color:var(--white); }
 .parking-rates ul li:last-child { border-bottom: none; }
 .parking-rates ul li span:last-child  { text-align: right; }
 .parking .caption-wrapper { display: grid; grid-template-columns: 970px 470px; grid-gap: 30px; }
-.parking .caption { display: grid; color: #8E8A93; padding: 0 30px; font-size: 23px; text-align: center; place-items: center center; font-weight: 600; border-radius: 3px; background-color: #F2F0F0; }
+.parking .caption { display: grid; color: var(--grey); padding: 0 30px; font-size: 23px; text-align: center; place-items: center center; font-weight: 600; border-radius: 3px; background-color: #F2F0F0; }
 .parking-rates .wrapper { display:grid; grid-template-columns: 1fr 1fr; font-family: 'Century Gothic Bold', Helvetica, Arial, sans-serif; padding: 20px; color: var(--visitor); font-size: 26px; line-height: 32px; }
 .parking-rates .wrapper span:last-child { text-align: right; }
 
@@ -491,7 +504,7 @@ datalist {} */
   src: url("../fonts/GOTHICB0.TTF");
 }
 @font-face {
-  font-family: "Century Gothic Bold Italic";
+  font-family: "Century Gothic Italic";
   src: url("../fonts/GOTHICI.TTF");
 }
 

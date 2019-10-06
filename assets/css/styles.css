@@ -302,10 +302,14 @@ button:hover { background: #A7A9AC; color:var(--white); }
 .event-carousel .event-content a { font-family: 'Montserrat SemiBold', sans-serif; text-decoration: underline; text-transform: uppercase; font-weight: 500; }
 
 /* Event Contain */
-.event-contain { display: grid; margin: auto; max-width: 1120px; background-color: var(--white); box-shadow: 2px 3px 16px 0 rgba(0,0,0,0.15); }
+.event-contain { display: grid; margin: 2rem auto; max-width: 1120px; background-color: var(--white); box-shadow: 2px 3px 16px 0 rgba(0,0,0,0.15); }
 .event-contain ul { padding: 30px; }
-.event-contain li { display:grid; height: 90px; align-items: center; grid-template-columns: 80px auto; border-bottom: 2px solid rgba(167,169,172,0.59); }
+.event-contain li { display:grid; min-height: 90px; align-items: center; grid-template-columns: 80px auto; border-bottom: 2px solid rgba(167,169,172,0.59); }
 .event-contain li:last-child { border-bottom: none; }
+
+.management-contain { display: grid; margin: 1rem auto; padding: 60px; max-width: 1020px; background-color: var(--white); box-shadow: 2px 3px 16px 0 rgba(0,0,0,0.15); }
+.management-contain-wrapper{ display:grid; grid-template-columns: 80px auto; }
+.management-contain header { font-family: 'Century Gothic Bold', Helvetica, Arial, sans-serif; color: #1F212F; font-size: 35px; line-height: 43px; text-shadow: 0 1px 8px 0 #131021; }
 
 /* Social Media */
 .social-media { display: grid; grid-template-columns: 45px 45px 45px; grid-gap: 20px; }

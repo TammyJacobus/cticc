@@ -8,3 +8,12 @@ $('.main-menu-inner').hover(
     function () { $('.main-menu-inner').removeClass('show-menu-inner') }
 )
 
+
+$(function () {
+    $('.toggle-menu').click(function(){
+       $('.menu').toggleClass('display');
+
+    });
+
+   });
+

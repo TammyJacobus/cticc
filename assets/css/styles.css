@@ -409,6 +409,17 @@ button:hover { background: #A7A9AC; color:var(--white); }
 .parking-rates .wrapper { display:grid; grid-template-columns: 1fr 1fr; font-family: 'Century Gothic Bold', Helvetica, Arial, sans-serif; padding: 20px; color: var(--visitor); font-size: 26px; line-height: 32px; }
 .parking-rates .wrapper span:last-child { text-align: right; }
 
+/* Tenders & RFQ's */
+.tender { display: grid; max-width: 1470px; grid-template-columns: 1fr; margin: auto; }
+.tender-rates { background-color: #FFFFFF; box-shadow: 2px 3px 16px 0 rgba(0,0,0,0.17); }
+.tender-rates header { font-family: 'Century Gothic Bold', Helvetica, Arial, sans-serif; padding: 20px; font-size: 30px; line-height: 37px; text-shadow: 0 1px 8px 0 #131021; text-align: center; color: var(--white); background-color: var(--supplier); }
+.tender-rates header span { color: #B09840; font-size: 26px; line-height: 32px; text-shadow: 0 1px 8px 0 #131021;; }
+.tender-rates ul li { display:grid; grid-template-columns: 1fr 1fr; padding: 20px; color: var(--black); font-size: 23px; line-height: 28px; font-family: 'Montserrat', sans-serif; font-weight: bold; border-bottom: 2px solid rgba(167,169,172,0.2); }
+.tender-rates ul li:last-child { border-bottom: none; }
+.tender-rates ul li span:last-child  { text-align: right; }
+.tender-rates .wrapper { display:grid; grid-template-columns: 1fr 1fr; font-family: 'Century Gothic Bold', Helvetica, Arial, sans-serif; padding: 20px; color: var(--supplier); font-size: 26px; line-height: 32px; }
+.tender-rates .wrapper span:last-child { text-align: right; }
+
 /* Documents */
 .documents-wrapper { display: grid; max-width: 1470px; justify-items: center; margin: auto; grid-template-columns: 1fr 1fr; grid-template-rows: auto; }
 .documents   { position: relative; max-width: 500px; padding:20px; }

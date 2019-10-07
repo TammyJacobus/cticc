@@ -31,7 +31,7 @@ hr  { display:table-caption; width:100%; border-bottom: 1px solid rgba(167,169,1
 img { display: grid; max-width: 100%; }
 
 /* Spacing */
-.padded { padding: 85px 0; }
+.padded { padding: 35px 0 85px 0; }
 .center { margin: auto; text-align: center; }
 .divider{ width: 100%; display: block;margin:20px auto 0; border-bottom: 2px solid rgba(167,169,172,0.59); opacity: 0.5; }
 .pull-right{ text-align: right; }
@@ -52,7 +52,7 @@ header { font-family: 'Century Gothic', Helvetica, Arial, sans-serif; color: var
 
 /* Buttons */
 input[type="submit"],
-button { cursor: pointer; text-transform:uppercase; border: 2px solid #A7A9AC; font-size: 19px; font-weight: bold; letter-spacing: 0.5px; line-height: 23px; text-align: center; background-color: transparent; margin: auto; height: 65px; width: 300px; border-radius: 3px; }
+button {font-family:'Montserrat SemiBold', sans-serif; cursor: pointer; text-transform:uppercase; border: 2px solid #A7A9AC; font-size: 19px;letter-spacing: 0.5px; line-height: 23px; text-align: center; background-color: transparent; margin: auto; height: 65px; width: 300px; border-radius: 3px; }
 .button-primary { border: 2px solid var(--primary); color:var(--primary); }
 .button-about   { border: 2px solid var(--about); color:var(--about); }
 .button-media   { border: 2px solid var(--media); color:var(--media); }
@@ -80,8 +80,13 @@ button:hover { background: #A7A9AC; color:var(--white); }
 /* Container */
 .wrapper  { display: grid; max-width: 100%; }
 .contain  { display: grid; max-width: 1470px; margin: auto;}
+<<<<<<< HEAD
 .constrain{ display: grid; max-width: 1270px; margin: 30px auto 4rem;}
 .header   { /*display: grid;*/ position: relative; width: 100%; height: 100%; overflow: hidden;}
+=======
+.constrain{ display: grid; max-width: 1270px; margin: 0 auto;}
+.header   { display: grid; position: relative; width: 100%; height: 100%; overflow: hidden;}
+>>>>>>> 7def210d0dc76ed5184652a7bbbdfa8e6b304e9f
 .top-nav-constrain { display: grid; max-width: 1600px; margin: auto; }
 .content-wrap { display: grid; max-width: 1000px; margin: auto; margin: 30px auto 2rem; }
 
@@ -104,9 +109,13 @@ button:hover { background: #A7A9AC; color:var(--white); }
 /* Secondary Banner */
 .banner { display: grid; box-shadow: 0 0 10px -5px inset rgba(0,0,0,0.5); justify-items: center; background-size: cover; width:100%; min-height: 390px; z-index: -1; background: var(--white); }
 .banner img { object-fit: cover; width:100%; max-height:400px; }
-.banner-inner { position: absolute; bottom: 0; min-width: 500px; left: 35%; padding: 40px 50px; margin: 0; border-radius: 3px; background-color: rgba(77,78,89,0.6); }
+.banner-inner { position: absolute; bottom: 0; min-width: 500px; left: 35%; padding: 40px 50px; margin: 0; border-radius: 3px; background-color: rgba(77,78,89,0.8); }
 .banner-inner h2,
+<<<<<<< HEAD
 .banner-inner-content h2 { font-family: 'Century Gothic Bold', Helvetica, Arial, sans-serif; position: relative; color: var(--white); font-size: 50px; font-weight: bold; line-height: 60px; font-style: normal; text-align: center; text-shadow: 0 2px 19px 0 rgba(19,16,33,0.24); }
+=======
+.banner-inner-content h2 { font-family: 'Century Gothic Bold', Helvetica, Arial, sans-serif; position: relative; color: var(--white); font-size: 50px; line-height: 60px; font-style: normal; text-align: center; text-shadow: 0 2px 19px 0 rgba(19,16,33,0.24); }
+>>>>>>> 7def210d0dc76ed5184652a7bbbdfa8e6b304e9f
 .banner-inner-content p  { font-family: 'Montserrat', sans-serif; color: var(--white); font-size: 25px; line-height: 41px; text-align: center; max-width: 900px; }
 .banner-inner-content { display: grid; align-items: center; margin: 30px; padding: 30px; }
 .banner-inner-content h2::after { position:absolute; content:""; border-bottom:2px solid var(--white); width:35px; bottom:-15px; left:49%; }
@@ -133,10 +142,11 @@ button:hover { background: #A7A9AC; color:var(--white); }
 .tips a { font-family: 'Montserrat Bold', sans-serif; text-decoration: underline; color: var(--visitor); }
 
 /* Supply Chain */
-.supply-chain-wrapper { background-color: var(--white); box-shadow: 2px 3px 16px 0 rgba(0,0,0,0.15); padding: 70px; }
+.supply-chain-wrapper { background-color: var(--white); box-shadow: 2px 3px 16px 0 rgba(0,0,0,0.15); padding: 70px;margin: 35px 0; }
 .supply-chain-wrapper span  { font-family: 'Montserrat', sans-serif; color: var(--grey); display:block; text-transform: uppercase; font-size: 22px; line-height: 27px; text-align: center; }
-.supply-chain-wrapper header{ font-family: 'Century Gothic SemiBold', Helvetica, Arial, sans-serif; font-weight: bold; text-align: center; }
+.supply-chain-wrapper header{ font-family: 'Century Gothic Bold', Helvetica, Arial, sans-serif; font-weight: bold; text-align: center; }
 .supply-chain { display: grid; grid-template-columns: 1fr 1fr; }
+.supply-chain p{line-height: 44px;}
 
 /* Menu */
 .menu    { font-family: 'Century Gothic', Helvetica, Arial, sans-serif; }
@@ -264,6 +274,7 @@ button:hover { background: #A7A9AC; color:var(--white); }
 /* Gallery 7 */
 .gallery-7 a { font-family: 'Montserrat SemiBold', sans-serif; padding:20px 0 0; color: var(--exhibitor); font-size: 20px; line-height: 31px; letter-spacing: 0.5px; text-transform: uppercase; }
 .gallery-7 .item  { display: grid; position: relative; padding:40px; overflow: hidden; background-color: var(--white); box-shadow: 2px 3px 16px 0 rgba(0,0,0,0.15); }
+.gallery-7 .item p{line-height: 37px;}
 .gallery-7 header { font-family: 'Montserrat SemiBold', sans-serif; padding:20px 0; font-size: 35px; line-height: 43px; color: var(--darkness); text-shadow: 0 1px 8px 0 #131021; }
 .gallery-7 .ico img { width: 65px; height: 65px; }
 
@@ -389,11 +400,11 @@ button:hover { background: #A7A9AC; color:var(--white); }
 .news-carousel img { border-radius:3px; width: 100%; }
 
 /* Organiser Carousel */
-.content-carousel { display: grid; position: relative; grid-gap: 20px; }
+.content-carousel { display: grid;grid-auto-flow: column;position: relative; grid-gap: 20px; }
 .content-carousel-bg  { display: grid; /*max-width:1920px;*/ width: 100%; }
 .content-carousel-bg.right { justify-items: right;  }
 .content-carousel img { max-width:1074px; width: 100%; }
-.content-carousel-content { position: absolute; top:100px; max-height:850px; padding:60px 100px 40px; background-color: var(--white); box-shadow: 2px 3px 16px 0 rgba(0,0,0,0.15); }
+.content-carousel-content { max-width:675px;max-height:850px;margin:210px 0 0 -320px; padding:60px 100px 40px; background-color: var(--white); box-shadow: 2px 3px 16px 0 rgba(0,0,0,0.15); }
 .content-carousel-content.right { right:100px; }
 .content-carousel-content.left  { left:100px; }
 .content-carousel-content-wrapper{ max-width:750px; }
@@ -494,11 +505,11 @@ button:hover { background: #A7A9AC; color:var(--white); }
 .documents header { font-family: 'Century Gothic Bold', Helvetica, Arial, sans-serif; font-weight: bold; margin-bottom: 20px; color: var(--black); font-size: 30px; line-height: 37px; }
 
 /* Planning Banner */
-.plan-banner { display: grid; grid-template-columns: 2fr 1fr; padding:90px; }
-.plan-banner span   { font-family: 'Montserrat Bold', sans-serif; opacity: 0.8; letter-spacing:3px; font-size: 23px; line-height: 28px; font-weight: 600; color: var(--white); text-transform: uppercase; }
+.plan-banner { display: grid; grid-template-columns: 2fr 1fr; padding:134px 90px; }
+.plan-banner span   { font-family: 'Montserrat SemiBold', sans-serif; opacity: 0.8; letter-spacing:3px; font-size: 23px; line-height: 28px; font-weight: 600; color: var(--white); text-transform: uppercase; }
 .plan-banner header { position: relative; display:grid; align-items:center; font-family: 'Century Gothic Bold', Helvetica, Arial, sans-serif; color: var(--white); padding-right:30px; font-size: 42px; font-weight: bold; line-height: 52px; text-shadow: 0 1px 8px 0 #131021; }
 .plan-banner header::after { position: absolute; content: ""; border-right: 1px solid var(--white); height:100%; right: 0; }
-.plan-banner button { background:transparent; border: 2px solid var(--white); width:270px; border-radius: 3px; }
+.plan-banner button { font-family:'Montserrat SemiBold', sans-serif;background:transparent; border: 2px solid var(--white); width:270px; border-radius: 3px;margin:auto 0px auto 75px; }
 .plan-banner button a { color: var(--white); text-decoration: none; }
 
 .plan-banner p{ font-family: 'Century Gothic', Helvetica, Arial, sans-serif; font-weight: bold; font-size: 35px; line-height: 44px; color: #FFFFFF; text-shadow: 0 1px 8px 0 #131021; }
@@ -508,8 +519,13 @@ button:hover { background: #A7A9AC; color:var(--white); }
 .sus-banner .ico { display: grid; place-items: center center; }
 
 /* Experience Points */
+<<<<<<< HEAD
 .experience-points-wrapper { display: grid; justify-self: stetch; grid-auto-flow: column; grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); width:-moz-available; width: -webkit-fill-available; max-width: 1470px; margin: 100px auto 80px; }
 .experience-points { padding:40px; margin:20px; border-radius: 3px; background-color: var(--white); box-shadow: 0 5px 14px 0 rgba(0,0,0,0.15); }
+=======
+.experience-points-wrapper { display: grid; justify-self: stetch; grid-auto-flow: column; grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); width:-moz-available; width: -webkit-fill-available; max-width: 1470px; margin: 100px auto 60px; }
+.experience-points { padding:50px; margin:20px; border-radius: 3px; background-color: var(--white); box-shadow: 0 5px 14px 0 rgba(0,0,0,0.15); }
+>>>>>>> 7def210d0dc76ed5184652a7bbbdfa8e6b304e9f
 .experience-points-ico { display: grid; place-items: center center; height: 65px; width: 65px; border-radius: 100px; background-color: rgba(193,168,76,0.1); }
 .experience-points-caption { font-family: 'Century Gothic Bold', Helvetica, Arial, sans-serif; color: var(--darkness); font-size: 35px; font-weight: bold; line-height: 43px; text-shadow: 0 1px 8px 0 #131021; padding: 10px 0; }
 .visitor-fill img { fill: #C1A84C !important; }
@@ -531,6 +547,9 @@ button:hover { background: #A7A9AC; color:var(--white); }
 .subscribe form input { font-family: 'Montserrat', sans-serif;margin: 10px; width: 200px; background: transparent; border: 2px solid #A7A9AC; font-size: 23px; color: #CACBCD; line-height: 22px; height:20px; padding:20px; font-weight: 600; }
 .subscribe form input::placeholder { font-style: italic; font-weight: normal; }
 .subscribe form input[type="button"] { width:65px; height: 64px; cursor: pointer; background-image:url(../img/icons/ico_arrow_newsletter.svg); background-repeat: no-repeat; background-position: center; border: 2px solid var(--white); border-radius: 3px; background-color: var(--white); }
+
+.accordion-holder{max-width: 1302px;}
+
 
 /* Footer */
 .footer { display: grid; background: var(--black); }

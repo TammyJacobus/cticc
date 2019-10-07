@@ -31,7 +31,7 @@ hr  { display:table-caption; width:100%; border-bottom: 1px solid rgba(167,169,1
 img { display: grid; max-width: 100%; }
 
 /* Spacing */
-.padded { padding: 85px 0; }
+.padded { padding: 35px 0 85px 0; }
 .center { margin: auto; text-align: center; }
 .divider{ width: 100%; display: block;margin:20px auto 0; border-bottom: 2px solid rgba(167,169,172,0.59); opacity: 0.5; }
 .right{ text-align: right; }
@@ -263,6 +263,7 @@ button:hover { background: #A7A9AC; color:var(--white); }
 /* Gallery 7 */
 .gallery-7 a { font-family: 'Montserrat SemiBold', sans-serif; padding:20px 0 0; color: var(--exhibitor); font-size: 20px; line-height: 31px; letter-spacing: 0.5px; text-transform: uppercase; }
 .gallery-7 .item  { display: grid; position: relative; padding:40px; overflow: hidden; background-color: var(--white); box-shadow: 2px 3px 16px 0 rgba(0,0,0,0.15); }
+.gallery-7 .item p{line-height: 37px;}
 .gallery-7 header { font-family: 'Montserrat SemiBold', sans-serif; padding:20px 0; font-size: 35px; line-height: 43px; color: var(--darkness); text-shadow: 0 1px 8px 0 #131021; }
 .gallery-7 .ico img { width: 65px; height: 65px; }
 
@@ -376,11 +377,11 @@ button:hover { background: #A7A9AC; color:var(--white); }
 .news-carousel img { border-radius:3px; width: 100%; }
 
 /* Organiser Carousel */
-.content-carousel { display: grid; position: relative; grid-gap: 20px; }
+.content-carousel { display: grid;grid-auto-flow: column;position: relative; grid-gap: 20px; }
 .content-carousel-bg  { display: grid; /*max-width:1920px;*/ width: 100%; }
 .content-carousel-bg.right { justify-items: right;  }
 .content-carousel img { max-width:1074px; width: 100%; }
-.content-carousel-content { position: absolute; top:100px; max-height:850px; padding:60px 100px 40px; background-color: var(--white); box-shadow: 2px 3px 16px 0 rgba(0,0,0,0.15); }
+.content-carousel-content { max-width:675px;max-height:850px;margin:210px 0 0 -320px; padding:60px 100px 40px; background-color: var(--white); box-shadow: 2px 3px 16px 0 rgba(0,0,0,0.15); }
 .content-carousel-content.right { right:100px; }
 .content-carousel-content.left  { left:100px; }
 .content-carousel-content-wrapper{ max-width:750px; }
@@ -481,11 +482,11 @@ button:hover { background: #A7A9AC; color:var(--white); }
 .documents header { font-family: 'Century Gothic Bold', Helvetica, Arial, sans-serif; font-weight: bold; margin-bottom: 20px; color: var(--black); font-size: 30px; line-height: 37px; }
 
 /* Planning Banner */
-.plan-banner { display: grid; grid-template-columns: 2fr 1fr; padding:90px; }
-.plan-banner span   { font-family: 'Montserrat Bold', sans-serif; opacity: 0.8; letter-spacing:3px; font-size: 23px; line-height: 28px; font-weight: 600; color: var(--white); text-transform: uppercase; }
+.plan-banner { display: grid; grid-template-columns: 2fr 1fr; padding:134px 90px; }
+.plan-banner span   { font-family: 'Montserrat SemiBold', sans-serif; opacity: 0.8; letter-spacing:3px; font-size: 23px; line-height: 28px; font-weight: 600; color: var(--white); text-transform: uppercase; }
 .plan-banner header { position: relative; display:grid; align-items:center; font-family: 'Century Gothic Bold', Helvetica, Arial, sans-serif; color: var(--white); padding-right:30px; font-size: 42px; font-weight: bold; line-height: 52px; text-shadow: 0 1px 8px 0 #131021; }
 .plan-banner header::after { position: absolute; content: ""; border-right: 1px solid var(--white); height:100%; right: 0; }
-.plan-banner button { background:transparent; border: 2px solid var(--white); width:270px; border-radius: 3px; }
+.plan-banner button { font-family:'Montserrat SemiBold', sans-serif;background:transparent; border: 2px solid var(--white); width:270px; border-radius: 3px;margin:auto 0px auto 75px; }
 .plan-banner button a { color: var(--white); text-decoration: none; }
 
 .plan-banner p{ font-family: 'Century Gothic', Helvetica, Arial, sans-serif; font-weight: bold; font-size: 35px; line-height: 44px; color: #FFFFFF; text-shadow: 0 1px 8px 0 #131021; }

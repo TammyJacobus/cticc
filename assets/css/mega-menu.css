@@ -402,6 +402,7 @@ a.toggle-menu {
 }
 
 .top-nav.secondary { position: relative; border-bottom: 2px solid #E3E4E5; }
+.top-nav.secondary .header-links { background-color: transparent; }
 .top-nav.secondary .menu > li { padding: 0; }
 .top-nav.secondary .menu > li > a { color: var(--dark); }
 

@@ -34,8 +34,8 @@ img { display: grid; max-width: 100%; }
 .padded { padding: 35px 0 85px 0; }
 .center { margin: auto; text-align: center; }
 .divider{ width: 100%; display: block;margin:20px auto 0; border-bottom: 2px solid rgba(167,169,172,0.59); opacity: 0.5; }
-.right{ text-align: right; }
-.left { text-align: left; }
+.pull-right{ text-align: right; }
+.pull-left { text-align: left; }
 
 /* List Items */
 ul { list-style-type: none; font-size: 23px; line-height: 28px; margin:0; padding:0; }

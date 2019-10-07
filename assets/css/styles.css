@@ -34,8 +34,8 @@ img { display: grid; max-width: 100%; }
 .padded { padding: 85px 0; }
 .center { margin: auto; text-align: center; }
 .divider{ width: 100%; display: block;margin:20px auto 0; border-bottom: 2px solid rgba(167,169,172,0.59); opacity: 0.5; }
-.right{ text-align: right; }
-.left { text-align: left; }
+.pull-right{ text-align: right; }
+.pull-left { text-align: left; }
 
 /* List Items */
 ul { list-style-type: none; font-size: 23px; line-height: 28px; margin:0; padding:0; }
@@ -208,11 +208,7 @@ button:hover { background: #A7A9AC; color:var(--white); }
 .content-header header { font-family: 'Century Gothic', Helvetica, Arial, sans-serif; text-transform: capitalize; color: var(--black); margin:45px auto 0; font-size: 50px; line-height: 61px; text-align: center; text-shadow: 0 1px 8px 0 #131021; }
 .content-header button { background-color: transparent; margin: auto; height: 65px; width: 215px; border: 2px solid #A7A9AC; border-radius: 3px; }
 .content-header p { max-width: 1120px; margin:0 auto; font-size: 25px; line-height: 41px; text-align: center; }
-<<<<<<< HEAD
 .content-header button a { font-family: 'Montserrat SemiBold', sans-serif; text-transform: uppercase; font-size: 19px; font-weight: bold; letter-spacing: 0.5px; color: #605B68; }
-=======
-.content-header button a { font-family: 'Montserrat', sans-serif; text-transform: uppercase; font-size: 19px; font-weight: bold; letter-spacing: 0.5px; color: var(--dark); }
->>>>>>> 012e70e72c9f4015d25e0c1001e4295a0d2d8902
 .content-header blockquote { border: 2px solid #7899AA; padding: 30px; border-radius: 5px; background-color: rgba(120,153,170, 0.13); color: #7899AA; text-align: center; font-style: italic; }
 
 .header-leading { display:grid; margin:0 0 40px 0; font-size: 37px; line-height: 56px; color: var(--black); text-align: center; text-shadow: 0 1px 8px 0 #131021; }

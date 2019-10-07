@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="59px" height="32px" viewBox="0 0 59 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 56.2 (101010) - https://sketch.com -->
+    <title>6A8B91DF-3283-494A-BA79-7D7EA7EB3A6D</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <path d="M24.0531798,18.4197595 L9.41446374,10.1278342 C2.62984172,6.28647118 -3.88783601,16.1666364 2.80949946,19.957302 L24.0786031,32 L52.0713128,26.3543101 L54.7746533,21.8729969 L24.7574042,27.9467055 L4.76793832,16.6303924 C2.5832324,15.3903852 5.17386312,12.1590525 7.45602488,13.4547438 L23.3896326,22.4780407 L37.3554795,19.5492299 L40.5935561,9.5576968 L26.8955008,9.5576968 C24.7574042,9.54273693 24.2531761,7.12837961 26.7361817,6.56322884 C30.6784827,5.64070332 44.2790821,4.26522609 47.4756339,3.94691323 L57.0059686,9.34077864 L59,6.03464665 L48.3391775,0 C41.3545591,0.816975301 32.5292964,1.14941693 25.8421302,2.8382204 C18.825309,4.48131314 20.0693541,13.3840999 27.05482,13.3791133 L35.2478909,13.3791133 L34.3123147,16.2622133 L24.0531798,18.4197595 L24.0531798,18.4197595 Z" id="path-1"></path>
+    </defs>
+    <g id="Organiser" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="2-organiser_landing_desktop" transform="translate(-931.000000, -5802.000000)">
+            <g id="footer-elements" transform="translate(0.000000, 5337.000000)">
+                <g id="quick-link-icons_desktop" transform="translate(0.000000, 300.000000)">
+                    <g id="quick-link-icons_red_desktop">
+                        <g>
+                            <g id="Group-12" transform="translate(700.000000, 0.000000)">
+                                <g id="Group-21-Copy" transform="translate(136.000000, 121.000000)">
+                                    <g id="Group-23">
+                                        <g id="ic_visitor_facilities" transform="translate(64.000000, 0.000000)">
+                                            <g transform="translate(31.000000, 44.000000)">
+                                                <mask id="mask-2" fill="white">
+                                                    <use xlink:href="#path-1"></use>
+                                                </mask>
+                                                <use id="Mask" fill="#FFFFFF" fill-rule="nonzero" xlink:href="#path-1"></use>
+                                                <rect id="Rectangle" fill="#CACBCD" mask="url(#mask-2)" x="34" y="16" width="32" height="32" rx="13.5"></rect>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -47,7 +47,7 @@ h2 { font-size: 80px; font-style: italic; font-weight: 100; margin: 0; }
 header { font-family: 'Century Gothic', Helvetica, Arial, sans-serif; color: var(--black); font-size: 50px; line-height: 61px; text-shadow: 0 1px 8px 0 #131021; }
 
 /* Backgrounds */
-.bg-grey { background-color: #F2F0F0; }
+.bg-grey { background-color: #F2F0F0; padding-bottom: 2rem; }
 .bg-park { background-color: #f7f4e8; }
 
 /* Buttons */
@@ -206,9 +206,9 @@ button:hover { background: #A7A9AC; color:var(--white); }
 .content-header { display:grid; position: relative;  width:auto; grid-column: 1/-1; align-items: center; grid-gap: 20px; margin:0 auto 50px; }
 .content-header:after  { position:absolute; content:""; border-bottom:2px solid #A7A9AC; width:35px; bottom:-30px; left:49%; }
 .content-header header { font-family: 'Century Gothic', Helvetica, Arial, sans-serif; text-transform: capitalize; color: var(--black); margin:45px auto 0; font-size: 50px; line-height: 61px; text-align: center; text-shadow: 0 1px 8px 0 #131021; }
-.content-header button { background-color: transparent; margin: auto; height: 65px; width: 258px; border: 2px solid #A7A9AC; border-radius: 3px; }
+.content-header button { background-color: transparent; margin: auto; height: 65px; width: 215px; border: 2px solid #A7A9AC; border-radius: 3px; }
 .content-header p { max-width: 1120px; margin:0 auto; font-size: 25px; line-height: 41px; text-align: center; }
-.content-header button a { font-family: 'Montserrat', sans-serif; text-transform: uppercase; font-size: 19px; font-weight: bold; letter-spacing: 0.5px; color: var(--dark); }
+.content-header button a { font-family: 'Montserrat SemiBold', sans-serif; text-transform: uppercase; font-size: 19px; font-weight: bold; letter-spacing: 0.5px; color: #605B68; }
 .content-header blockquote { border: 2px solid #7899AA; padding: 30px; border-radius: 5px; background-color: rgba(120,153,170, 0.13); color: #7899AA; text-align: center; font-style: italic; }
 
 .header-leading { display:grid; margin:0 0 40px 0; font-size: 37px; line-height: 56px; color: var(--black); text-align: center; text-shadow: 0 1px 8px 0 #131021; }
@@ -220,8 +220,9 @@ button:hover { background: #A7A9AC; color:var(--white); }
 .gallery-wrapper { padding:20px 30px; }
 
 .gallery.staff { display: grid; grid-template-columns:repeat(4, 1fr); max-width: 1380px; grid-auto-flow: dense; }
-.gallery .name  { font-family: 'Century Gothic', Helvetica, Arial, sans-serif; padding-top: 10px; font-size: 32px; line-height: 35px; text-transform: capitalize; color: #070918; }
-.gallery .title { font-family: 'Montserrat', sans-serif; padding-top: 10px; font-size: 22px; line-height: 27px; text-transform: uppercase; color: var(--grey); }
+.gallery .date { }
+.gallery .name { font-family: 'Century Gothic', Helvetica, Arial, sans-serif; padding-top: 10px; font-size: 32px; line-height: 35px; text-transform: capitalize; color: #070918; }
+.gallery .title{ font-family: 'Montserrat', sans-serif; padding-top: 10px; font-size: 22px; line-height: 27px; text-transform: uppercase; color: var(--grey); }
 
 
 /* Gallery 1 */
@@ -329,7 +330,7 @@ button:hover { background: #A7A9AC; color:var(--white); }
 
 /* Event Banner */
 .event-banner   { display: grid; margin: 20px; place-content: center center; }
-.event-carousel { position: relative; margin: 20px auto; }
+.event-carousel { position: relative; margin: 20px auto 40px; }
 .event-carousel .play { position: absolute; top: 40%; left: 45%; height: 113px; width: 113px; border-radius: 55.9px; background-image: url(../img/icons/ico_play.svg); background-position: center; background-repeat:no-repeat; background-color: rgba(31,33,47,0.5); }
 .event-carousel .event-content { position: absolute; top: 2rem; left: 2rem; padding: 2rem; width: 290px; background-color: rgba(31,33,47,0.7); border-radius: 3px; color: var(--white); }
 .event-carousel .event-content header { font-family: 'Century Gothic', Helvetica, Arial, sans-serif; font-size: 40px; line-height: 46px; color: var(--white); }

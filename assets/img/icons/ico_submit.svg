@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="177px" height="177px" viewBox="0 0 177 177" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 57.1 (101010) - https://sketch.com -->
+    <title>FF31D0D6-8BC1-4C32-B2EA-8BD211B20F07</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <circle id="path-1" cx="72.644" cy="72.644" r="72.644"></circle>
+        <filter x="-16.2%" y="-15.5%" width="135.1%" height="135.1%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="2" dy="3" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="8" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.154611014 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Supplier" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="5.5-supplier_view-tender" transform="translate(-338.000000, -2947.000000)">
+            <g id="step-1-copy-2" transform="translate(224.000000, 2843.000000)">
+                <g id="ic_submit" transform="translate(128.000000, 117.000000)">
+                    <g id="Oval">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    </g>
+                    <path d="M61.9001801,75.2608666 L41,53 L105,63.7006265 L54.9192825,105 L61.9001801,75.2608666 Z M54.8976807,60.4664455 L65.4273191,71.6800948 L87.163372,65.859341 L54.8976807,60.4664455 Z M66.7433493,76.5965531 L63.2255756,91.5780013 L88.4716457,70.7639394 L66.7433493,76.5965531 Z" id="ic_subnit" fill="#7899AA" fill-rule="nonzero"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

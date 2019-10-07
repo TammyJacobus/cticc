@@ -188,6 +188,7 @@ button:hover { background: #A7A9AC; color:var(--white); }
 .content-header button { background-color: transparent; margin: auto; height: 65px; width: 300px; border: 2px solid #A7A9AC; border-radius: 3px; }
 .content-header p { max-width: 1120px; margin:0 auto; font-size: 25px; line-height: 41px; text-align: center; }
 .content-header button a { font-family: 'Montserrat', sans-serif; text-transform: uppercase; font-size: 19px; font-weight: bold; letter-spacing: 0.5px; color: #A7A9AC; }
+.content-header blockquote { border: 2px solid #7899AA; padding: 30px; border-radius: 5px; background-color: rgba(120,153,170, 0.13); color: #7899AA; font-style: italic; }
 
 .header-leading { display:grid; margin: 40px; font-size: 37px; line-height: 56px; color: var(--black); text-align: center; text-shadow: 0 1px 8px 0 #131021; }
 
@@ -389,6 +390,12 @@ button:hover { background: #A7A9AC; color:var(--white); }
 .program-wrapper { display: grid; grid-template-columns: 1fr 1fr; margin: 30px 0; border-radius: 3px; box-shadow: 2px 3px 16px 0 rgba(0,0,0,0.15); }
 .program-wrapper-details { padding: 15px 30px; }
 .program-wrapper-details h2 { font-family: 'Century Gothic Bold', Helvetica, Arial, sans-serif; font-style: bold; color: var(--dark); font-style: normal; font-size: 35px; line-height: 60px; text-shadow: 0 1px 8px 0 #131021; border-bottom: 2px solid rgba(167,169,172,0.59); }
+
+.supplier-wrapper-details { padding: 0 30px; }
+.supplier-wrapper { display: grid; grid-template-columns: auto 1fr; margin: 30px 0; padding: 40px; border-radius: 3px; background: var(--white); box-shadow: 2px 3px 16px 0 rgba(0,0,0,0.15); }
+.supplier-wrapper .ico { background-color: #F1F4F6; border-radius: 2px; width: 300px; display: flex; justify-content: center; align-items: center;}
+.supplier-wrapper  h2  { font-family: 'Century Gothic Bold', Helvetica, Arial, sans-serif; font-style: bold; color: var(--dark); font-style: normal; font-size: 35px; line-height: 60px; text-shadow: 0 1px 8px 0 #131021; border-bottom: 2px solid rgba(167,169,172,0.59); }
+.supplier-wrapper span { font-family: 'Montserrat SemiBold', sans-serif; text-transform: uppercase; color: #8E8A93; }
 
 .team-wrapper { display: grid; grid-template-columns: 450px 1fr; padding: 30px 0; }
 .team-details { display: grid; text-align: center; align-items: center; }

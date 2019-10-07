@@ -35,7 +35,10 @@ a:focus {
 
 .menu > li {
   display: inline-block;
-  float: left;
+  font-family: 'Century Gothic SemiBold', Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  padding: 15px;
 }
 
 @media (max-width: 1284px) {
@@ -84,6 +87,8 @@ a:focus {
 
 .menu .logo {
   float: right;
+  margin: 0; 
+  padding: 0;
 }
 
 .menu .logo img {
@@ -129,9 +134,9 @@ a:focus {
   font-family: 'Century Gothic', Helvetica, Arial, sans-serif;
   color: #a7a9ac;
   margin-top: 0px;
+  margin-bottom: 0px;
   font-size: 35px;
-  padding-left: 15px;
-  padding-bottom: 13px;
+  padding-bottom: 25px;
   text-transform: uppercase;
 }
 
@@ -143,8 +148,8 @@ a:focus {
 
 .mega-menu ul li a {
   line-height: 25px;
+  font-size: 30px;
   font-size: 90%;
-  display: block;
   font-family: 'Century Gothic', Helvetica, Arial, sans-serif;
 }
 
@@ -161,12 +166,14 @@ a:focus {
 
 .mega-menu .description li a {
   color: var(--dark);
+  font-weight: normal;
+  font-size: 30px;
 }
 
 .mega-menu .mega-event-box {
   margin-right: 60px;
   background-color: #F6F6F6;
-  padding: 49px 61px;
+  padding: 49px 35px;
 }
 
 @media (max-width: 905px) {
@@ -181,6 +188,7 @@ a:focus {
   border-bottom: 1px solid var(--beige);
   padding-bottom: 30px;
   margin-bottom: 30px;
+  margin-top: 0; 
 }
 
 @media (max-width: 905px) {
@@ -188,6 +196,7 @@ a:focus {
     font-size: 20px;
     padding-bottom: 20px;
     margin-bottom: 20px;
+    margin-left: 0;
   }
 }
 
@@ -217,12 +226,14 @@ a:focus {
 
 .mega-menu .more-info .dropdown {
   margin-bottom: 30px;
+  margin-left: 0;
 }
 
 .mega-menu .more-info h6 {
   font-size: 25px;
   font-family: 'Century Gothic bold', Helvetica, Arial, sans-serif;
   color: var(--darkness);
+  margin: 20px 0; 
 }
 
 @media (max-width: 905px) {
@@ -274,8 +285,8 @@ a:focus {
   display: grid;
   -ms-grid-rows: auto;
       grid-template-rows: auto;
-  -ms-grid-columns: 30% 40% 30%;
-      grid-template-columns: 30% 40% 30%;
+  -ms-grid-columns: 35% 35% 30%;
+      grid-template-columns: 35% 35% 30%;
 }
 
 @media (max-width: 905px) {
@@ -390,6 +401,10 @@ a.toggle-menu {
   }
 }
 
+.top-nav.secondary { position: relative; border-bottom: 2px solid #E3E4E5; }
+.top-nav.secondary .menu > li { padding: 0; }
+.top-nav.secondary .menu > li > a { color: var(--dark); }
+
 .top-nav {
   position: absolute;
   margin: 0 auto;
@@ -406,6 +421,7 @@ a.toggle-menu {
 
 .top-nav .header-links {
   text-align: right;
+  background-color: rgba(31,33,47,0.1);
 }
 
 .top-nav .header-links ul li {

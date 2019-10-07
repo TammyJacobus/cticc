@@ -3,6 +3,7 @@
   --red:#E1091F;
   --red-tag:#E2081E;
   --grey:#8E8A93;
+  --light-grey:#605B68;
   --black:#4D4E59;
   --dark:#070918;
   --darkness:#1F212F;
@@ -76,9 +77,9 @@ button:hover { background: #A7A9AC; color:var(--white); }
 
 /* Container */
 .wrapper  { display: grid; max-width: 100%; }
-.contain  { display: grid; max-width: 1470px; margin: auto; }
-.constrain{ display: grid; max-width: 1270px; margin: 30px auto 4rem; }
-.header   { display: grid; position: relative; width: 100%; height: 100%; overflow: hidden; }
+.contain  { display: grid; max-width: 1470px; margin: auto;}
+.constrain{ display: grid; max-width: 1270px; margin: 30px auto 4rem;}
+.header   { display: grid; position: relative; width: 100%; height: 100%; overflow: hidden;}
 .top-nav-constrain { display: grid; max-width: 1600px; margin: auto; }
 .content-wrap { display: grid; max-width: 1000px; margin: auto; margin: 30px auto 2rem; }
 
@@ -86,8 +87,17 @@ button:hover { background: #A7A9AC; color:var(--white); }
 .hero-banner      { position: relative; background: url(../img/banners/banner_home.png) no-repeat; background-size: cover; width:100%; max-width: 100%; height: 1080px; z-index: -1; }
 .hero-banner-mask { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(132.58deg, rgba(0,0,0,0.36) 0%, rgba(0,0,0,0.14) 100%); }
 .banner-content   { position: absolute; top: 360px; left: 15%; margin: 0; }
-.banner-content h1{ font-family: 'Century Gothic Bold', Helvetica, Arial, sans-serif; font-size: 120px; line-height: 120px; text-shadow: 0 3px 31px 0 rgba(19,16,33,0.24); margin-bottom: 0; }  
+.banner-content h1{ font-family: 'Century Gothic Bold', Helvetica, Arial, sans-serif; font-size: 120px; line-height: 120px; text-shadow: 0 3px 31px 0 rgba(19,16,33,0.24); margin-bottom: 0; }
 .banner-content p { font-size: 24px; color: var(--white); }
+
+/* Banner Events Booking */
+.banner-content .events-booking{width: 1028px;height: 180px;display: flex; align-items: flex-end;  -webkit-border-radius: 3px;-moz-border-radius: 3px;border-radius: 3px;	background-color: rgba(77,78,89,0.4);position: absolute;bottom: -323px;left: 0%;margin: 0;}
+.banner-content .events-booking a{ width: 39%;padding:50px;display: block;}
+.banner-content .events-booking p{color: var(--white); opacity: 0.5;font-family: Montserrat;font-size: 22px;font-weight: 600;	letter-spacing: 0.5px;line-height: 27px;margin:0;padding:0;}
+.banner-content .events-booking a header{ color: var(--white);margin:0;padding:0;position: relative;}
+.banner-content .events-booking span.divider{width: 2.2px;height: 66px;display:block;box-sizing: border-box; border: 2.2px solid var(--black);}
+.banner-content .events-booking a img{position: absolute;top:25px;right:-20px;}
+.banner-content .events-booking a:nth-child(1) header img{right:20px;}
 
 /* Secondary Banner */
 .banner { display: grid; box-shadow: 0 0 10px -5px inset rgba(0,0,0,0.5); justify-items: center; background-size: cover; width:100%; min-height: 390px; z-index: -1; background: var(--white); }
@@ -162,9 +172,9 @@ button:hover { background: #A7A9AC; color:var(--white); }
 /* */
 .content-accordion { display: grid; position: relative; border-bottom: 1px solid rgba(167,169,172,0.59); font-size: 40px; color: var(--black); text-shadow: 0 1px 8px 0 #131021; padding: 30px 30px 30px 0; }
 .content-accordion:after { position: absolute; right:0; bottom:30%; content: "+"; }
-.content-accordion:hover + 
+.content-accordion:hover +
 .content-accordion-description { max-height: 100%; transition: max-height 0.4s ease-in; }
-.content-accordion:hover::after + 
+.content-accordion:hover::after +
 .content-accordion-description { position: absolute; right: 0; top: 50%; content: "-"; }
 .content-accordion-description { max-height: 0; overflow: hidden; transition: max-height 0.15s ease-in; }
 .content-accordion-description div { line-height: 42px; }

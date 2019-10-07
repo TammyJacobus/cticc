@@ -280,6 +280,9 @@ li.drop-down > a:hover + .drop-down-ul,
 /*responsive*/
 
 @media (min-width: 905px) {
+  .toggle-menu {
+    display:none;
+  }
   .menu > li > a {
     display: block;
     padding: 20px 5px;
@@ -331,6 +334,9 @@ a.toggle-menu {
   background-color: #ccc;
   color: #23364b;
   top: 0px;
+  @media (max-width: 905px) {
+    display:block;
+  }
 }
 
 .top-nav {

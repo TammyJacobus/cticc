@@ -91,6 +91,7 @@ button:hover { background: #A7A9AC; color:var(--white); }
 
 /* Secondary Banner */
 .banner { display: grid; box-shadow: 0 0 10px -5px inset rgba(0,0,0,0.5); justify-items: center; background-size: cover; width:100%; min-height: 390px; z-index: -1; background: var(--white); }
+.banner img { object-fit: cover; width:100%; max-height:400px; }
 .banner-inner { position: absolute; bottom: 0; min-width: 500px; left: 35%; padding: 40px 50px; margin: 0; border-radius: 3px; background-color: rgba(77,78,89,0.6); }
 .banner-inner h2,
 .banner-inner-content h2 { font-family: 'Century Gothic SemiBold', Helvetica, Arial, sans-serif; position: relative; color: var(--white); font-size: 50px; font-weight: bold; line-height: 60px; font-style: normal; text-align: center; text-shadow: 0 2px 19px 0 rgba(19,16,33,0.24); }

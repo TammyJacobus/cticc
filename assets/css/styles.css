@@ -32,6 +32,8 @@ img { display: grid; max-width: 100%; }
 /* Spacing */
 .padded { padding: 30px; }
 .center { margin: auto; text-align: center; }
+.right{ text-align: right; }
+.left { text-align: left; }
 .divider{ width: 100%; margin:20px auto 0; border-bottom: 2px solid rgba(167,169,172,0.59); opacity: 0.5; }
 
 /* List Items */
@@ -404,14 +406,15 @@ button:hover { background: #A7A9AC; color:var(--white); }
 .store-details button { width: 275px; height: 65px; }
 
 .program-wrapper { display: grid; grid-template-columns: 1fr 1fr; margin: 30px 0; border-radius: 3px; box-shadow: 2px 3px 16px 0 rgba(0,0,0,0.15); }
-.program-wrapper-details { padding: 15px 30px; }
+.program-wrapper-details { padding: 20px 30px; }
 .program-wrapper-details h2 { font-family: 'Century Gothic Bold', Helvetica, Arial, sans-serif; font-style: bold; color: var(--dark); font-style: normal; font-size: 35px; line-height: 60px; text-shadow: 0 1px 8px 0 #131021; border-bottom: 2px solid rgba(167,169,172,0.59); }
+.program-wrapper-details span { font-family: 'Montserrat', sans-serif; text-transform:uppercase; font-size: 22px; line-height: 27px; color: var(--grey); }
 
 .supplier-wrapper-details { padding: 0 30px; }
 .supplier-wrapper { display: grid; grid-template-columns: auto 1fr; margin: 30px 0; padding: 40px; border-radius: 3px; background: var(--white); box-shadow: 2px 3px 16px 0 rgba(0,0,0,0.15); }
 .supplier-wrapper .ico { background-color: #F1F4F6; border-radius: 2px; width: 300px; display: flex; justify-content: center; align-items: center;}
 .supplier-wrapper  h2  { font-family: 'Century Gothic Bold', Helvetica, Arial, sans-serif; font-style: bold; color: var(--dark); font-style: normal; font-size: 35px; line-height: 60px; text-shadow: 0 1px 8px 0 #131021; border-bottom: 2px solid rgba(167,169,172,0.59); }
-.supplier-wrapper span { font-family: 'Montserrat SemiBold', sans-serif; text-transform: uppercase; color: #8E8A93; }
+.supplier-wrapper span { font-family: 'Montserrat SemiBold', sans-serif; text-transform: uppercase; color: var(--grey); }
 
 .team-wrapper { display: grid; grid-template-columns: 450px 1fr; padding: 30px 0; }
 .team-details { display: grid; text-align: center; align-items: center; }

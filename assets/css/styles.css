@@ -224,7 +224,7 @@ button:hover { background: #A7A9AC; color:var(--white); }
 .gallery .date { font-family: 'Montserrat', sans-serif; font-weight: bold; font-size: 22px; line-height: 27px; color: #8E8A93; }
 .gallery .name { font-family: 'Century Gothic', Helvetica, Arial, sans-serif; padding-top: 10px; font-size: 32px; line-height: 35px; text-transform: capitalize; color: #070918; }
 .gallery .title{ font-family: 'Montserrat', sans-serif; padding-top: 10px; font-size: 22px; line-height: 27px; text-transform: uppercase; color: var(--grey); }
-/*.gallery .date-wrap { display: grid; grid-template-columns: 1fr 1fr; }*/
+.gallery .date-wrap { display: grid; grid-template-columns: 4fr 1fr; height: 60px; align-items: center; }
 
 
 /* Gallery 1 */
@@ -510,7 +510,7 @@ button:hover { background: #A7A9AC; color:var(--white); }
 .sus-banner .ico { display: grid; place-items: center center; }
 
 /* Experience Points */
-.experience-points-wrapper { display: grid; justify-self: stetch; grid-auto-flow: column; grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); width:-moz-available; width: -webkit-fill-available; max-width: 1470px; margin: 100px auto 60px; }
+.experience-points-wrapper { display: grid; justify-self: stetch; grid-auto-flow: column; grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); width:-moz-available; width: -webkit-fill-available; max-width: 1470px; margin: 100px auto 80px; }
 .experience-points { padding:50px; margin:20px; border-radius: 3px; background-color: var(--white); box-shadow: 0 5px 14px 0 rgba(0,0,0,0.15); }
 .experience-points-ico { display: grid; place-items: center center; height: 65px; width: 65px; border-radius: 100px; background-color: rgba(193,168,76,0.1); }
 .experience-points-caption { font-family: 'Century Gothic Bold', Helvetica, Arial, sans-serif; color: var(--darkness); font-size: 35px; font-weight: bold; line-height: 43px; text-shadow: 0 1px 8px 0 #131021; padding: 10px 0; }

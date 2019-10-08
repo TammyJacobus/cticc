@@ -2082,45 +2082,67 @@ nav .logo {
   max-width: 750px;
 }
 
-.content-carousel-content-wrapper .toggle {
-  border: 1.5px solid #D5D5D5 !important;
-  margin: 0;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  width: 68px !important;
-  height: 36.5px;
-  display: inline-block;
-  position: relative;
-  border-radius: 3px;
-  overflow: hidden;
-  outline: none;
-  border: none;
-  cursor: pointer;
-  background-color: #FFFFFF;
-  color: #FFFFFF;
-  transition: background-color ease 0.3s;
+.container {
+  margin: 0 auto;
+  padding: 0;
+  width: 400px;
 }
 
-.content-carousel-content-wrapper input[type="checkbox"].toggle:before {
-  content: "% R";
-  display: block;
-  position: absolute;
+.switch {
+  position: relative;
+  height: 60px;
+  width: 240px;
+  margin: 20px auto;
+  background-color: #FFFFFF;
+  box-shadow: 2px 3px 16px 0 rgba(0,0,0,0.15);
+  border-radius: 30.5px;
+  display: flex;
+  align-items: center;
+}
+
+.switch-label {
+  position: relative;
   z-index: 2;
-  width: 30px;
-  height: 29px;
-  background: #D1021E;
-  left: 2px;
+  float: left;
+  width: 120px;
+  color: rgba(255, 255, 255, 0.35);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.45);
+  cursor: pointer;
+  font-size: 19px;
+  line-height: 23px;
+  text-align: center;
+  color: #FFFFFF;
+  letter-spacing: 0.5px;
+  font-family: 'Montserrat SemiBold', sans-serif;
+}
+
+.switch-input {
+  display: none;
+}
+.switch-input:checked + .switch-label-on ~ .switch-selection {
+  left: 120px;
+  /* Note: left: 50%; doesn't transition in WebKit */
+}
+
+.switch-selection {
+  position: absolute;
+  z-index: 1;
   top: 2px;
-  border-radius: 2px;
-  text-transform: uppercase;
-  font-weight: bold;
-  text-indent: -25px;
-  word-spacing: 43px;
-  font-size: 21px;
-  color: #2D2D2D;
-  white-space: nowrap;
-  transition: all cubic-bezier(0.3, 1.5, 0.7, 1) 0.3s;
+  left: 2px;
+  display: block;
+  width: 120px;
+  height: 55px;
+  border-radius: 27.5px;
+  background-color: #C1A84C;
+  -webkit-transition: left 0.15s ease-out;
+  -moz-transition: left 0.15s ease-out;
+  -ms-transition: left 0.15s ease-out;
+  -o-transition: left 0.15s ease-out;
+  transition: left 0.15s ease-out;
 }
 
 .content-carousel-content header {

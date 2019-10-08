@@ -39,6 +39,7 @@ p {
   font-size: 23px;
   color: var(--grey);
   font-weight: 500;
+  text-align: left;
 }
 
 a {
@@ -532,6 +533,7 @@ button:hover {
   background: var(--white);
   box-shadow: 2px 3px 16px 0 rgba(0, 0, 0, 0.15);
   margin-bottom: 3rem;
+  padding-bottom: 3rem;
 }
 
 .carpark img {
@@ -2059,9 +2061,10 @@ nav .logo {
 }
 
 .content-carousel-content {
+  position: absolute;
   max-width: 675px;
   max-height: 850px;
-  margin: 210px 0 0 -320px;
+  margin: 5% 0 0 0;
   padding: 60px 100px 40px;
   background-color: var(--white);
   box-shadow: 2px 3px 16px 0 rgba(0, 0, 0, 0.15);
@@ -2077,6 +2080,47 @@ nav .logo {
 
 .content-carousel-content-wrapper {
   max-width: 750px;
+}
+
+.content-carousel-content-wrapper .toggle {
+  border: 1.5px solid #D5D5D5 !important;
+  margin: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 68px !important;
+  height: 36.5px;
+  display: inline-block;
+  position: relative;
+  border-radius: 3px;
+  overflow: hidden;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background-color: #FFFFFF;
+  color: #FFFFFF;
+  transition: background-color ease 0.3s;
+}
+
+.content-carousel-content-wrapper input[type="checkbox"].toggle:before {
+  content: "% R";
+  display: block;
+  position: absolute;
+  z-index: 2;
+  width: 30px;
+  height: 29px;
+  background: #D1021E;
+  left: 2px;
+  top: 2px;
+  border-radius: 2px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-indent: -25px;
+  word-spacing: 43px;
+  font-size: 21px;
+  color: #2D2D2D;
+  white-space: nowrap;
+  transition: all cubic-bezier(0.3, 1.5, 0.7, 1) 0.3s;
 }
 
 .content-carousel-content header {

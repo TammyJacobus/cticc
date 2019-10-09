@@ -20,6 +20,9 @@
   --about: #475C87;
   --media: #DF927C;
   --plan: rgba(199, 78, 78, 0.9);
+  --span: #A7A9AC;
+  --input:#CACBCD;
+  --bg-grey:#F2F0F0;
 }
 
 html {
@@ -43,9 +46,15 @@ p {
 }
 
 a {
+  font-family: 'Montserrat', sans-serif;
   color: inherit;
   text-decoration: none;
   cursor: pointer;
+  font-size: 20px;
+  line-height: 31px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 hr {
@@ -61,6 +70,13 @@ img {
   max-width: 100%;
 }
 
+span {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 22px;
+  line-height: 27px;
+  font-weight: 600;
+  color: var(--span);
+}
 
 /* Spacing */
 
@@ -137,7 +153,7 @@ header {
 /* Backgrounds */
 
 .bg-grey {
-  background-color: #F2F0F0;
+  background-color: var(--bg-grey);
   padding-bottom: 2rem;
 }
 
@@ -153,7 +169,7 @@ button {
   font-family: 'Montserrat SemiBold', sans-serif;
   cursor: pointer;
   text-transform: uppercase;
-  border: 2px solid #A7A9AC;
+  border: 2px solid var(--span);
   font-size: 19px;
   letter-spacing: 0.5px;
   line-height: 23px;
@@ -211,7 +227,7 @@ button {
 }
 
 button:hover {
-  background: #A7A9AC;
+  background: var(--span);
   color: var(--white);
 }
 
@@ -752,7 +768,7 @@ nav .logo {
 .breadcrumb {
   display: flex;
   align-items: center;
-  color: #A7A9AC;
+  color: var(--span);
   font-size: 18px;
   line-height: 22px;
   height: 60px;
@@ -948,7 +964,7 @@ nav .logo {
 .content-header:after {
   position: absolute;
   content: "";
-  border-bottom: 2px solid #A7A9AC;
+  border-bottom: 2px solid var(--span);
   width: 35px;
   bottom: -30px;
   left: 49%;
@@ -970,7 +986,7 @@ nav .logo {
   margin: auto;
   height: 65px;
   min-width: 215px;
-  border: 2px solid #A7A9AC;
+  border: 2px solid var(--span);
   border-radius: 3px;
   white-space: nowrap;
 }
@@ -1615,7 +1631,15 @@ nav .logo {
 
 .info-block {
   display: grid;
-  grid-template-columns: 1fr 420px;
+  grid-template-columns: 1fr 420px;  
+  margin-bottom: 30px;
+}
+
+.report-block {
+  display: grid;
+  grid-template-columns: 1fr 560px;  
+  margin-bottom: 30px;
+  grid-gap: 30px;
 }
 
 .info-block-lrg {
@@ -1629,9 +1653,9 @@ nav .logo {
   color: rgb(155, 150, 161);
 }
 
-.info-block-sml {
+.info-block-sml,
+.report-block-sml {
   padding: 30px 50px;
-  margin-bottom: 30px;
   background-color: var(--white)FFFFF;
   box-shadow: 2px 3px 16px 0 rgba(0, 0, 0, 0.15);
 }
@@ -1647,6 +1671,31 @@ nav .logo {
   letter-spacing: 0.25px;
   color: #7899AA;
   margin-right: 30px;
+}
+.report-block-lrg span,
+.report-block-sml span {
+  font-family: 'Century Gothic', Helvetica, Arial, sans-serif;
+  font-size: 22px;
+  line-height: 27px;
+  letter-spacing: 0.25px;
+  color: #7899AA;
+  text-transform: uppercase;
+  margin-right: 30px;
+  display: block;
+  margin-top: 30px;
+}
+.report-block-lrg header,
+.report-block-sml header {
+  font-size: 26px;
+  line-height: 41px;
+  font-weight: 600;
+  color: #4D4E59;
+}
+
+.info-block-sml header {
+  font-size: 30px;
+  line-height: 35px;
+  color: #4D4E59;
 }
 
 .info-block-sml header {
@@ -1740,7 +1789,7 @@ nav .logo {
   margin: 0;
   padding: 15px;
   color: var(--grey);
-  background-color: #F2F0F0;
+  background-color: var(--bg-grey);
   text-align: center;
   font-size: 23px;
   line-height: 39px;
@@ -1754,8 +1803,8 @@ nav .logo {
   font-size: 22px;
   line-height: 27px;
   padding: 20px 0;
-  border-top: 1px solid #F2F0F0;
-  border-bottom: 1px solid #F2F0F0;
+  border-top: 1px solid var(--bg-grey);
+  border-bottom: 1px solid var(--bg-grey);
   margin: 30px auto;
   color: var(--grey);
   font-size: 22px;
@@ -2001,11 +2050,11 @@ nav .logo {
 /*.confirmation .column:nth-child(n+2) span { margin-left: 10px; }*/
 
 .confirmation .column:nth-child(n+1) {
-  border-right: 1px solid #A7A9AC;
+  border-right: 1px solid var(--span);
 }
 
 .confirmation .column:nth-child(n+2) {
-  border-right: 1px solid #A7A9AC;
+  border-right: 1px solid var(--span);
 }
 
 .confirmation .column:nth-child(n+2) > p::after {
@@ -2014,7 +2063,7 @@ nav .logo {
   width: 75%;
   bottom: 0;
   left: 0;
-  border-bottom: 1px solid #A7A9AC;
+  border-bottom: 1px solid var(--span);
   opacity: 0.5;
 }
 
@@ -2554,7 +2603,7 @@ nav .logo {
   place-items: center center;
   font-weight: 600;
   border-radius: 3px;
-  background-color: #F2F0F0;
+  background-color: var(--bg-grey);
 }
 
 .parking-rates .wrapper {
@@ -2582,7 +2631,7 @@ nav .logo {
 }
 
 .tender-rates {
-  background-color: #FFFFFF;
+  background-color: var(--white);
   box-shadow: 2px 3px 16px 0 rgba(0, 0, 0, 0.17);
 }
 
@@ -2918,7 +2967,7 @@ nav .logo {
 .subscribe p::after {
   position: absolute;
   content: "";
-  border-bottom: 2px solid #A7A9AC;
+  border-bottom: 2px solid var(--span);
   width: 35px;
   bottom: 0;
   left: 50%;
@@ -2935,9 +2984,9 @@ nav .logo {
   margin: 10px;
   width: 200px;
   background: transparent;
-  border: 2px solid #A7A9AC;
+  border: 2px solid var(--span);
   font-size: 23px;
-  color: #CACBCD;
+  color: var(--input);
   line-height: 22px;
   height: 20px;
   padding: 20px;
@@ -3002,9 +3051,10 @@ nav .logo {
 .footer-top li span {
   font-family: 'Century Gothic Bold', Helvetica, Arial, sans-serif;
   color: var(--white);
-  font-size: 23px;
-  line-height: 34px;
+  font-size: 28px;
+  line-height: 44px;
   font-weight: 500;
+  letter-spacing: 0.5px;
   display: block;
 }
 
@@ -3028,6 +3078,7 @@ nav .logo {
 .footer-top .column:last-child li {
   display: inline-flex;
   justify-content: center;
+  align-items: center;
   width: 45px;
   height: 45px;
   background: #403F4B;
@@ -3037,7 +3088,11 @@ nav .logo {
 }
 
 .footer-top .column:first-child li span {
+  font-family: 'Century Gothic', Helvetica, Arial, sans-serif;
   margin-top: 50px;
+  font-size: 23px;
+  line-height: 27px;
+  letter-spacing: 0.5px;
 }
 
 .footer-bottom {
@@ -3056,12 +3111,12 @@ nav .logo {
   font-weight: normal;
   font-size: 21px;
   margin: 20px;
-  color: #A7A9AC;
+  color: var(--span);
 }
 
 .footer-bottom li a {
   position: relative;
-  color: #A7A9AC;
+  color: var(--span);
   font-weight: normal;
 }
 
@@ -3092,9 +3147,9 @@ form {
 input {
   width: 200px;
   background: transparent;
-  border: 2px solid #A7A9AC;
+  border: 2px solid var(--span);
   font-size: 23px;
-  color: #CACBCD;
+  color: var(--input);
   line-height: 22px;
   height: 20px;
   padding: 20px;

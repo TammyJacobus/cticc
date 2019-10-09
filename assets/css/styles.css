@@ -1028,6 +1028,21 @@ nav .logo {
   text-shadow: 0 1px 8px 0 #131021;
 }
 
+.image-gallery {
+  display: grid;
+  max-width: 1470px;
+  padding: 40px;
+  margin: auto;
+  grid-auto-flow: dense;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 30px;
+}
+.image-gallery header {
+  font-size: 40px;
+  line-height: 47px;
+  color: var(--black);
+}
+
 .gallery {
   display: grid;
   max-width: 1470px;
@@ -1689,13 +1704,13 @@ nav .logo {
   font-size: 26px;
   line-height: 41px;
   font-weight: 600;
-  color: #4D4E59;
+  color: var(--black);
 }
 
 .info-block-sml header {
   font-size: 30px;
   line-height: 35px;
-  color: #4D4E59;
+  color: var(--black);
 }
 
 .info-block-sml header {
@@ -3163,7 +3178,7 @@ input::placeholder {
 }
 
 select::placeholder {
-  color: #4D4E59;
+  color: var(--black);
 }
 
 input[type="button"] {
@@ -3185,7 +3200,7 @@ select {
   margin: 0 10px;
   padding: 10px;
   width: 350px;
-  color: #4D4E59;
+  color: var(--black);
   font-size: 23px;
   line-height: 28px;
   height: 65px;
@@ -3218,7 +3233,7 @@ form p {
   font-weight: bold;
   font-size: 21px;
   line-height: 33px;
-  color: #4D4E59;
+  color: var(--black);
 }
 
 form hr {

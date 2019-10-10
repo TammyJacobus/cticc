@@ -120,8 +120,7 @@ a:focus {
 }
 
 .mega-menu .mega-menu-wrap {
-  padding-top: 67px;
-  padding-bottom: 78px;
+  padding: 65px 50px 80px 50px;
 }
 
 @media (max-width: 905px) {
@@ -132,12 +131,12 @@ a:focus {
 
 .mega-menu .row.mega-title {
   font-family: 'Century Gothic', Helvetica, Arial, sans-serif;
+  font-weight: normal;
   color: #a7a9ac;
   margin-top: 0px;
   margin-bottom: 0px;
   font-size: 35px;
-  padding-bottom: 25px;
-  text-transform: uppercase;
+  padding-bottom: 35px;
 }
 
 @media (max-width: 905px) {
@@ -151,6 +150,7 @@ a:focus {
   font-size: 30px;
   font-size: 90%;
   font-family: 'Century Gothic', Helvetica, Arial, sans-serif;
+  text-transform: none;
 }
 
 .mega-menu .stander li a {
@@ -160,7 +160,7 @@ a:focus {
 .mega-menu .description li {
   margin: 0;
   padding: 0;
-  padding-bottom: 24px;
+  padding-bottom: 25px;
   display: block;
 }
 
@@ -171,9 +171,15 @@ a:focus {
 }
 
 .mega-menu .mega-event-box {
-  margin-right: 60px;
   background-color: #F6F6F6;
-  padding: 49px 35px;
+  height: 100%;
+  padding: 40px 45px;
+}
+
+.mega-menu .mega-event-box {
+  font-size: 23px;
+  font-weight: 600;
+  line-height: 37px;
 }
 
 @media (max-width: 905px) {
@@ -201,7 +207,8 @@ a:focus {
 }
 
 .mega-menu .mega-event-box button {
-  margin-top: 43px;
+  margin-top: 40px;
+  width: 100%;
 }
 
 @media (max-width: 905px) {
@@ -211,10 +218,20 @@ a:focus {
   }
 }
 
+.mega-menu .more-info select {
+  background-color: #FFFFFF;
+  border-radius: 3px;
+  border: 2px solid rgba(167,169,172,0.42);
+  box-shadow: none;
+}
+
 .mega-menu .more-info h5 {
   font-size: 30px;
   color: var(--darkness);
   margin-bottom: 30px;
+}
+.mega-menu .more-info .ico svg {
+  margin-right: 10px;
 }
 
 @media (max-width: 905px) {
@@ -233,7 +250,7 @@ a:focus {
   font-size: 25px;
   font-family: 'Century Gothic bold', Helvetica, Arial, sans-serif;
   color: var(--darkness);
-  margin: 20px 0; 
+  margin: 0 0 20px 0; 
 }
 
 @media (max-width: 905px) {
@@ -242,13 +259,19 @@ a:focus {
   }
 }
 
+.mega-menu .more-info {
+  margin: 0 auto;
+}
+
 .mega-menu .more-info p {
   font-size: 25px;
+  padding: 0;
+  margin: 0;
 }
 
 @media (max-width: 905px) {
   .mega-menu .more-info p {
-    font-size: 16px;
+    font-size: 16px;    
   }
 }
 
@@ -262,16 +285,23 @@ a:focus {
   }
 }
 
-.mega-menu .more-info .ico {
+.mega-menu .more-info .ico span a {
   text-decoration: underline;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 39px;
+  color: #8E8A93;
 }
 
 .mega-menu .more-info .ico img {
+  display: inline;
   color: var(--red);
 }
 
 .mega-menu .more-info .ico a {
   color: var(--beige);
+  text-transform: lowercase;
 }
 
 @media (max-width: 905px) {
@@ -352,6 +382,7 @@ li.drop-down > a:hover + .drop-down-ul,
   li.drop-down > ul {
     position: absolute;
     z-index: 1000;
+    display: block;
   }
 }
 
